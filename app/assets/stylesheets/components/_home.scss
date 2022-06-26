@@ -1,0 +1,73 @@
+.title-products {
+  font-size: 70px;
+  color: var(--main-font-color);
+  text-align: center;
+  margin-top: 7%;
+  font-family: "Trump Gothic";
+}
+
+.img-photo{
+  width: 300px;
+  height: 450px;
+  z-index: -1;
+}
+
+.img-photo:hover {
+  filter: opacity(35%);
+  opacity: 1;
+}
+
+
+.img-bolsa{
+  width: 46px;
+  height: 68px;
+  position: absolute;
+  top: 371px;
+  left: 247px;
+  z-index: 1;
+}
+
+.boton2 {
+  font-size: 16px;
+  color: rgba(165, 143, 115, 1) ;
+  text-decoration: none;
+  font-family: "Oakes Grotesk";
+  font-weight: 600;
+}
+
+.banner2 {
+  margin-top: 10%;
+  height: 671px;
+
+  .img-banner2 {
+    background: linear-gradient(90deg, rgba(51, 51, 51, 0.5) 0%, rgba(51, 51, 51, 0.35) 39.37%, rgba(51, 51, 51, 0.2) 60.77%, rgba(51, 51, 51, 0.08) 81.91%, rgba(51, 51, 51, 0) 100%);
+    z-index: -1;
+  }
+}
+.cont {
+  font-family: "Trump Gothic";
+  font-weight: 100;
+  font-size: 100px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  z-index: 1;
+  line-height: 114.72%;
+  position: relative;
+  top: -449px;
+  left: 315px;
+  max-width: 817px;
+}
+
+.donde-title{
+  font-family: "Trump Gothic";
+  font-weight: bold;
+  font-size: 70px;
+  color: var(--main-font-color);
+}
+
+.donde-desc {
+  font-family: "Oakes Grotesk";
+  font-weight: 500;
+  font-size: 16px;
+  color: #A58F73;
+}

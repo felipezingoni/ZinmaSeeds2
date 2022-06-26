@@ -1,0 +1,51 @@
+@import "components/navbar";
+@import "components/footer";
+@import "components/carrousel";
+@import "components/intro";
+@import "components/home";
+
+
+body {
+  //Beige background
+  --main-bg-color: rgba(255, 247, 240, 1);
+  //Verde claro Fonts
+  --main-font-color: rgba(108, 112, 89, 1) ;
+}
+
+// fonts
+@font-face {
+  font-family: "Oakes Grotesk";
+  src: url('fonts/oakes/Oakes-Grotesk-Bold.otf');
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: "Oakes Grotesk";
+  src: url('fonts/oakes/Oakes-Grotesk-Semi-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Oakes Grotesk";
+  src: url('fonts/oakes/Oakes-Grotesk-Medium.otf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Oakes Grotesk";
+  src: url('app/assets/stylesheets/fonts/oakes/Oakes-Grotesk-Regular.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Oakes Grotesk";
+  src: url('fonts/oakes/Oakes-Grotesk-Light.otf');
+  font-weight: lighter;
+}
+
+
+@font-face {
+  font-family: "Trump Gothic";
+  font-weight: bold;
+  src: url('fonts/trump/trump_gothic_east_bold.ttf')format('truetype');
+}

@@ -1,0 +1,38 @@
+.intro {
+  background-color: var(--main-bg-color);
+  height: 624px;
+}
+
+
+.title-zinma {
+  padding-top: 7%;
+  font-size: 60px;
+  color: var(--main-font-color);
+  font-family: "Trump Gothic";
+  font-weight: bold;
+}
+
+.description-zinma {
+  color: rgba(165, 143, 115, 1);
+  font-size: 16px;
+  padding-top: 3%;
+  padding-bottom: 7%;
+  font-family: "Oakes Grotesk" ;
+  font-weight: 400;
+}
+
+.boton {
+  background-color: var(--main-font-color) ;
+  width: 178px;
+  height: 52px;
+  border-radius: 28px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-family: "Oakes Grotesk";
+  font-weight: 500;
+}
