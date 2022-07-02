@@ -46,3 +46,51 @@
 .nav2-link:hover {
   color:rgba(39, 38, 38, 0.634) ;
 }
+
+.selector {
+  height: 50px;
+}
+
+.selectField {
+  width: 73px;
+  height: 50px;
+  padding: 11px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  /* background: #ababab; */
+  border-radius: 5px;
+  border: 1px solid #a3a3a336;
+  text-align: center;
+}
+.selectField.active,
+.selectField:hover {
+    border: 1px solid #6060604f;
+}
+
+
+.list {
+      width: 70px;
+        background: #eeeeeec9;
+        border-radius: 5px;
+        overflow: hidden;
+        text-align: center;
+        padding: 0;
+        box-shadow: 1px 1px 2px #d6d6d6;
+        z-index: 2;
+}
+
+.options {
+  width: 100%;
+  padding: 15px;
+  list-style: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.options:hover {
+  background: rgba(0, 0, 0, 0.185);
+}
+
+.hide{
+  visibility: hidden;
+}

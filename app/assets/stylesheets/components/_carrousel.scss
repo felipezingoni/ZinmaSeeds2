@@ -18,8 +18,71 @@
   transition: opacity 0.6s ease;
 }
 
-.img-carrousel {
+.carousel {
+  z-index: -1;
+}
+
+ .img-carrousel {
+    position: relative;
+    top: 100px;
+ }
+
+.ban {
+  background-image: url(https://res.cloudinary.com/ddlmgs04n/image/upload/v1656421302/Zinma2.0/DJI_0874_1_hflxst.png);
   height: 90vh;
   width: 100%;
+}
+.ban-1 {
+  color: white;
+  font-family: 'Trump Gothic';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24.48px;
+}
+.line {
+  border: 1px solid white;
+  opacity: 1;
+}
+.ban-2 {
+  font-family: 'Trump Gothic';
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 100.72%;;
+  color: #FFFFFF;
+}
+.ban-3 {
+  font-family: 'Oakes Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 127%;
+  color: #FFFFFF;
+  width: 547px;
+  margin-top: 30px;
+}
+.boton-w {
+  background: #FFFFFF;
+  border: 1px solid #7F816D;
+  border-radius: 28px;
+  color: rgba(127, 129, 109, 1);
+  text-decoration: none;
+  font-family: 'Oakes Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 18px 40px;
+  gap: 12px;
+}
 
+.ban2{
+  background-image: url(https://res.cloudinary.com/ddlmgs04n/image/upload/v1656422957/Zinma2.0/Frame_205_tamood.png);
+  height: 90vh;
+  width: 100%;
+}
+
+.ban3{
+  background-image: url(https://res.cloudinary.com/ddlmgs04n/image/upload/v1656422956/Zinma2.0/Frame_206_ux6sbv.png);
+  height: 90vh;
+  width: 100%;
 }

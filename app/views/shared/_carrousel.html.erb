@@ -1,18 +1,62 @@
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+<%# <div id="carouselExampleIndicators" class="carousel slide" data-controller="carrousel" data-carrousel-index="0" data-bs-ride="true">
   <div class="carousel-indicators">
-    <button type="button" class="carousel-points active" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" class="carousel-points " data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" class="carousel-points " data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" class="carousel-points show active" data-action="click->carrousel#show" data-carrousel-target="item" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" class="carousel-points " data-action="click->carrousel#show" data-carrousel-target="item" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" class="carousel-points "data-action="click->carrousel#show" data-carrousel-target="item" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item show active" data-carousel-target="image">
       <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1655731274/Zinma2.0/matt-benson-rHbob_bEsSs-unsplash_dba4bx.jpg", class:"d-block w-100 img-carrousel") %>
-    </div>
-    <div class="carousel-item">
+    <%# </div>
+    <div class="carousel-item" data-carousel-target="image">
       <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1655731250/Zinma2.0/kelly-sikkema-ettyLtH2GjU-unsplash_m26gq5.jpg", class:"d-block w-100 img-carrousel") %>
-    </div>
-    <div class="carousel-item">
+    <%# </div>
+    <div class="carousel-item" data-carousel-target="image">
       <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1655731274/Zinma2.0/matt-benson-rHbob_bEsSs-unsplash_dba4bx.jpg", class:"d-block w-100 img-carrousel") %>
+    <%# </div> %>
+  <%# </div>
+</div> %>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" class="carousel-points active" data-slide-to="0" ></li>
+    <li data-target="#carouselExampleIndicators" class="carousel-points" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" class="carousel-points" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active ban">
+      <div class="container img-carrousel" >
+        <p class="ban-1"><%= t('ban-1') %></p>
+        <hr class="line">
+        <h1 class="ban-2"><%= t('ban-2') %></h1>
+        <p class="ban-3"><%= t('ban-3') %></p>
+        <div class="mt-5">
+          <%= link_to t('ban-boton'), products_index_path, class:"boton-w" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item ban2">
+     <div class="container img-carrousel" >
+        <p class="ban-1"><%= t('ban-1') %></p>
+        <hr class="line">
+        <h1 class="ban-2"><%= t('ban-2') %></h1>
+        <p class="ban-3"><%= t('ban-3') %></p>
+        <div class="mt-5">
+          <%= link_to t('ban-boton'), products_index_path, class:"boton-w" %>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item ban3">
+     <div class="container img-carrousel" >
+        <p class="ban-1"><%= t('ban-1') %></p>
+        <hr class="line">
+        <h1 class="ban-2"><%= t('ban-2') %></h1>
+        <p class="ban-3"><%= t('ban-3') %></p>
+        <div class="mt-5">
+          <%= link_to t('ban-boton'), products_index_path, class:"boton-w" %>
+        </div>
+      </div>
     </div>
   </div>
+
 </div>
