@@ -17,10 +17,24 @@
 <div>
   <h1 class="title-products mb-5"><%= t 'nuestros-productos' %></h1>
   <div class="text-center d-flex justify-content-evenly align-items-center">
-    <div class="position-relative">
-      <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1655855223/Zinma2.0/sorgos1_x7rfbq.png", class:"img-bolsa") %>
-      <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1655854873/Zinma2.0/a7aa0db5818c1cf1d06fe7b6e5b265c3_m5hob1.jpg", class:"img-photo")%>
+    <div>
+      <div class="position-relative img-2 ">
+        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1655854873/Zinma2.0/a7aa0db5818c1cf1d06fe7b6e5b265c3_m5hob1.jpg", class:"img-photo")%>
+        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1655855223/Zinma2.0/sorgos1_x7rfbq.png", class:"img-bolsa") %>
+      </div>
+      <div class="img-3">
+        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1655855223/Zinma2.0/sorgos1_x7rfbq.png", class:"img-bolsa2") %>
+        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1655854873/Zinma2.0/a7aa0db5818c1cf1d06fe7b6e5b265c3_m5hob1.jpg", class:"img-photo2")%>
+        <h2 >Alfalfa</h2>
+        <div class=" bton d-flex justify-content-center align-items-center mt-5">
+          <%= link_to t('conoce-pro'), "#", class:"boton2 mx-3" %>
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="18" viewBox="0 0 48 18" fill="none">
+            <path d="M0 9.99997H43.586L37.293 16.293L38.707 17.707L47.414 8.99997L38.707 0.292969L37.293 1.70697L43.586 7.99997H0V9.99997Z" fill="#A58F73"/>
+          </svg>
+        </div>
+      </div>
     </div>
+
 
     <div class="position-relative">
       <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1655855223/Zinma2.0/alfalfa1_jasmms.png", class:"img-bolsa") %>
@@ -64,4 +78,10 @@
     <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656040157/Zinma2.0/DJI_0863_1_qymoix.png") %>
   </div>
 
+</div>
+
+<div class="intro" style="height: 753px;">
+  <div class="container">
+    <%= render 'shared/map' %>
+  </div>
 </div>
