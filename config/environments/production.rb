@@ -62,14 +62,14 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "zinma2_0_production"
 
-  config.action_mailer.perform_caching = false
-  config.action_mailer.default_url_options = {host: 'https://zinmaseeds-app.herokuapp.com/'}
-  ActionMailer::Base.delivery_method = :smtp
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default_url_options = {host: 'zinmaseeds-app.herokuapp.com'}
   ActionMailer::Base.smtp_settings = {
   address: 'smtp.sendgrid.net',
   port: 587,
   authentication: :plain,
-  domain: 'heroku.com',
+  domain: 'zinmaseeds-app.herokuapp.com',
   enable_starttls_auto: true,
   user_name: ENV['SENDGRID_USERNAME'],
   password: ENV['SENDGRID_PASSWORD']
