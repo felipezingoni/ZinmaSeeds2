@@ -1,0 +1,34 @@
+<div class="product-banner">
+  <h1><%= t 'product-title' %></h1>
+</div>
+
+<div class="container m-5">
+  <div class="d-flex">
+    <ul class=" d-flex list-inline">
+      <li><h2 class="p-4 font"><%= t'Alfalfa' %></h2></li>
+      <li><h2 class="p-4 font-select"><%= t'Sorgo' %></h2></li>
+      <li><h2 class="p-4 font"><%= t'Pasturas' %></h2></li>
+      <li><h2 class="p-4 font"><%= t'Cultivos' %></h2></li>
+    </ul>
+   </div>
+</div>
+
+
+<div class="intro" style="height: 696px;">
+  <div class="container">
+    <div class="d-flex justify-content-center flex-column align-items-center w-50 p-5" style="margin: 0 auto;">
+      <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1657911981/Zinma2.0/sorgo_1_qpsrr0.png", class:"position-absolute opacity-50") %>
+      <h1 class="font-pro m-4"><%= t'Sorgo' %></h1>
+      <p class="desc-pro m-4">Zinma Seeds ofrece híbridos de sorgo forrajero capaces de producir grandes cantidades de alimento para su operación. Nuestros híbridos incluyen tipos de grano / ensilado de doble propósito, así como BMR para mejorar la calidad del forraje.</p>
+    </div>
+      <div class="d-flex justify-content-center">
+        <p class="pro-primer">Productos de primera calidad</p>
+        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1657911134/Zinma2.0/Arrow_16_futvng.svg") %>
+        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1655855223/Zinma2.0/sorgos1_x7rfbq.png",  class:"bolsa") %>
+        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1657911030/Zinma2.0/Arrow_17_udmr0w.svg") %>
+        <p class="pro-rend">Rendimiento comprobado</p>
+      </div>
+  </div>
+</div>
+
+<%= render 'shared/ensayo' %>

@@ -14,16 +14,18 @@
 
 .img-2 {
   display: block;
+  position: relative;
 }
 
 .img-2:hover {
   display: none;
+ .img-3 {
+    display: block;
+    transition: 0.6s;
+    clip-path: circle(95.8% at 23% 49%);
+ }
 }
-.img-2:hover ~ .img-3 {
-  display: block;
-  transition: 0.6s;
-  clip-path: circle(95.8% at 23% 49%);
-}
+
 
 .img-3 {
   display: none;
@@ -83,7 +85,6 @@
 }
 
 .banner2 {
-  margin-top: 10%;
   height: 671px;
 
   .img-banner2 {
@@ -117,4 +118,106 @@
   font-weight: 500;
   font-size: 16px;
   color: #A58F73;
+}
+
+
+
+
+
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu a span:first-child {
+  display: inline-block;
+  padding: 10px;
+}
+
+.menu a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu a span:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+}
+
+.menu a span {
+  transition: transform 0.3s ease-out;
+}
+
+.menu a:hover span:first-child {
+  transform: translateY(100%);
+}
+
+.menu a:hover span:last-child {
+  transform: none;
+}
+
+
+.img-22{
+  position: relative;
+  display: block;
+  .alfa {
+    width: 300px;
+    height: 450px;
+    z-index: -1;
+  }
+  .alf-bolsa {
+    position: absolute;
+    width: 46px;
+    height: 68px;
+    top: 371px;
+    left: 247px;
+    z-index: 1;
+  }
+}
+
+.img-33 {
+  position: relative;
+  display: none;
+  .alfa-bolsa2 {
+    position: absolute;
+    width: 130px;
+    height: 194px;
+    top: 69px;
+    left: 77px;
+    z-index: 1;
+  }
+  .alfa2 {
+    width: 300px;
+    height: 450px;
+    background: #FFFFFF;
+    opacity: 0.2;
+    box-shadow: 0px 4px 40px 5px rgba(159, 159, 159, 0.05);
+  }
+    h2 {
+      position: absolute;
+      top: 284px;
+      left: 107px;
+      z-index: 1;
+      font-family: 'Trump Gothic';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 103.5%;
+      color: #7F816D;
+    }
+    .bton {
+      z-index: 1;
+      position: absolute;
+      top: 305px;
+      left: 61px;
+    }
 }

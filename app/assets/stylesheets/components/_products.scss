@@ -13,3 +13,77 @@
   line-height: 114.72%;
   }
 }
+
+.font {
+  font-family: 'Trump Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 100.72%;
+  display: flex;
+  align-items: center;
+  color: #D2D2D2;
+}
+
+.font-select{
+  font-family: 'Trump Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 100.72%;
+    display: flex;
+    align-items: center;
+    color: #272727;
+    border-bottom: 6px solid #A58F73;
+}
+
+.bolsa {
+  width: 166px;
+  height: 245px;
+}
+
+.font-pro{
+  font-family: 'Trump Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100.72%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6C7059;
+}
+
+.desc-pro {
+  font-family: 'Oakes Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #A58F73;
+}
+
+.pro-primer {
+  font-family: 'Trump Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100.72%;
+  color: #6C7059;
+  position: absolute;
+  left: 321px;
+}
+
+.pro-rend {
+  font-family: 'Trump Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100.72%;
+  color: #6C7059;
+  position: absolute;
+  left: 949px;
+}

@@ -1,0 +1,18 @@
+<%= form_for Contact.new do |f| %>
+  <div class="col-md-12 form">
+
+    <%= f.text_field  :name, placeholder: "Nombre", required: true, class: "contact-form-text-area form-contact" %>
+
+    <%= f.text_field :email, placeholder: "Email", required: true, class: "contact-form-text-area form-contact" %>
+
+    <%= f.text_area :message, placeholder: "Tu consulta", required: true, class: "contact-form-text-area form-contact", style:"width: 492px;"%>
+
+    <div class= "d-none">
+      <%= f.label :nickname %>
+      <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+    </div>
+
+    <%= f.submit 'Enviar', class: 'boton', style:"border: 0px;" %>
+
+  </div>
+<% end %>

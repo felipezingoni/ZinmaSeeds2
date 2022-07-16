@@ -1,0 +1,30 @@
+.form-contact {
+  font-family: 'Oakes Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 134.73%;
+  border: 0;
+  background-color: transparent;
+  margin: 10px;
+  border-bottom-color: rgba(186, 187, 186, 1);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  color: rgba(108, 112, 89, 1);
+  width: 234px;
+  margin-bottom: 54px;
+  outline: 0;
+}
+
+.form-contact:focus {
+      padding-bottom: 6px;
+      font-weight: 700;
+      border-width: 3px;
+      border-image: linear-gradient(to right, rgba(108, 112, 89, 1));
+      border-image-slice: 1;
+    }
+
+
+.form {
+  padding: 20px;
+}

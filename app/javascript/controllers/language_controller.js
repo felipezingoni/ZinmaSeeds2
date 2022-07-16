@@ -13,7 +13,7 @@ export default class extends Controller {
   //   this.element.classList.toggle("active");
   // }
 
-  static targets = ["element"];
+  static targets = ["element", "flag"];
 
   toggle(event) {
     event.preventDefault();
@@ -27,5 +27,15 @@ export default class extends Controller {
       }
     });
 
+  }
+
+  show(event) {
+    this.flagTargets.forEach((flag) => {
+      if(flag.classList.contains("arg")){
+        console.log("arg")
+      } else {
+        console.log("usa")
+      }
+    })
   }
 }

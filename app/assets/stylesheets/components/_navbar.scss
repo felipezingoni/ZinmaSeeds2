@@ -52,8 +52,8 @@
 }
 
 .selectField {
-  width: 73px;
-  height: 50px;
+  width: 92px;
+  height: 61px;
   padding: 11px;
   margin-bottom: 10px;
   box-sizing: border-box;
@@ -61,12 +61,19 @@
   border-radius: 5px;
   border: 1px solid #a3a3a336;
   text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
 }
 .selectField.active,
 .selectField:hover {
     border: 1px solid #6060604f;
 }
 
+.selectText {
+  display: flex;
+  align-items: flex-end;
+}
 
 .list {
       width: 70px;
@@ -93,4 +100,8 @@
 
 .hide{
   visibility: hidden;
+}
+
+.disactive {
+  display: none;
 }

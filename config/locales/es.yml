@@ -12,9 +12,17 @@ es:
   ban-2: "Liderá tu lote"
   ban-3: "Desde Argentina hacia el mundo, una empresa fuertemente enfocada en la evolución y calidad de sus semillas."
   ban-boton: "Conocé nuestros productos"
+  ban-2b: "Líderes en calidad"
+  ban-3b: "Nuestro compromiso en mejorar es diario. Llevamos un control eficiente en los procesos de calidad para llegar a un producto de de excelencia."
+  ban-2c: "Expertos en desarrollo"
+  ban-3c: "Zinma trabaja a nivel global y cuenta con expertos en investigación y desarrollo. Nuestro compromiso es proveer productos de alta calidad y con alto rendimiento."
 
 
   product-title: "Productos"
+  Alfalfa: "Alfalfa"
+  Sorgo: "Sorgo"
+  Pasturas: "Pasturas"
+  Cultivos: "Cultivos de Servicios"
 
   contact-title: "Contacto"
   contactanos: "Contactanos"
@@ -23,3 +31,6 @@ es:
   quienes-somos: "Quienes somos"
   quienes-descr: "En Zinma Seeds somos una empresa de proyección internacional especializados en semillas forrajeras, tanto alfalfa como forrajeras templadas, cultivos de servicios y sorgos. Nos ubicamos en Estados Unidos y Argentina, abasteciendo el mercado local e internacional."
   quienes-descr2: "Buscamos la excelencia en los distintos procesos tanto producción, planta y I+D de modo de lograr sinergia con nuestros clientes."
+  title-objetivos: "Nuestros objetivos"
+  descr-objetivos: "Buscamos ser referentes en la produccion de semillas no tradicionales como forrajeras, alfalfa y cultivos de servicios. Hacemos foco en ser un empresa sustentable y rentable en el tiempo.
+                    Invertimos en nuevas tecnologías de maquinaria y procesos de plantas, para mejorar los procesos de gestión."
