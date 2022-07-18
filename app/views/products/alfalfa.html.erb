@@ -5,46 +5,57 @@
 <div class="container m-5">
   <div class="d-flex">
     <ul class=" d-flex list-inline">
-      <li><h2 class="p-4 font-select"><%= t'Alfalfa' %></h2></li>
-      <li><h2 class="p-4 font"><%= t'Sorgo' %></h2></li>
-      <li><h2 class="p-4 font"><%= t'Pasturas' %></h2></li>
-      <li><h2 class="p-4 font"><%= t'Cultivos' %></h2></li>
+      <li><h2 class="p-4 font-select"><%= link_to t('Alfalfa'), "#", class:"font-select2" %></h2></li>
+      <li><h2 class="p-4 font"><%= link_to t('Sorgo'), products_sorgo_path, class:"font2"  %></h2></li>
+      <li><h2 class="p-4 font"><%= link_to t('Pasturas'), products_pasturas_path, class:"font2" %></h2></li>
+      <li><h2 class="p-4 font"><%= link_to t('Cultivos'), products_cultivos_path, class:"font2" %></h2></li>
     </ul>
-   </div>
+  </div>
 
-   <div>
-      <ul class=" d-flex list-inline">
-        <li><h5>All</h5></li>
-        <li><h5>GL6</h5></li>
-        <li><h5>GL7</h5></li>
-        <li><h5>GL8</h5></li>
-      </ul>
-   </div>
 
-   <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-secondary active">
-        <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
-      </label>
-      <label class="btn btn-secondary">
-        <input type="radio" name="options" id="option2" autocomplete="off"> Radio
-      </label>
-      <label class="btn btn-secondary">
-        <input type="radio" name="options" id="option3" autocomplete="off"> Radio
-      </label>
-   </div>
 
-   <div>
-    <ul>
-      <li><p>HYBRIFORCE 3600</p></li>
-      <li><p>ALPHATEC 621</p></li>
-      <li><p>MAGNA 790</p></li>
-      <li><p>ALPHATEC 821</p></li>
-      <li><p>MAGNA 868</p></li>
-      <li><p>ALPHATEC 921</p></li>
-      <li><p>MAGNA 995</p></li>
-    </ul>
-   </div>
+  <div class="container" data-controller="infopanel" data-infopanel-index="0">
+        <div class="row">
+            <div class="col-7">
+                <div class="d-flex flex-row">
+                    <a href="#" class="categoria active2" data-action="click->infopanel#show" data-target="infopanel.item">ALL</a>
+                    <li class="list-inline"><h5 class="espaciador"></h5></li>
+                    <a href="#" class="categoria" data-action="click->infopanel#show" data-target="infopanel.item">GL6</a>
+                    <li class="list-inline"><h5 class="espaciador"></h5></li>
+                    <a href="#" class="categoria" data-action="click->infopanel#show" data-target="infopanel.item">GL7</a>
+                    <li class="list-inline"><h5 class="espaciador"></h5></li>
+                    <a href="#" class="categoria" data-action="click->infopanel#show" data-target="infopanel.item">GL8</a>
+                    <li class="list-inline"><h5 class="espaciador"></h5></li>
+                </div>
+            </div>
+            <div class="">
+                <div class=" col-7">
+                    <div class="tab-pane fade show active grid-card list-inline" role="tabpanel" data-target="infopanel.content">
+                      <li><a href="#" class="card-type active" data-action="click->infopanel#show" data-target="infopanel.item">HYBRIFORCE 3600</a></li>
+                      <li><a href="#" class="card-type active" data-action="click->infopanel#show" data-target="infopanel.item">ALPHATEC 621</a></li>
+                      <li><a href="#" class="card-type active" data-action="click->infopanel#show" data-target="infopanel.item">MAGNA 790</a></li>
+                      <li><a href="#" class="card-type active" data-action="click->infopanel#show" data-target="infopanel.item">MAGNA 868</a></li>
+                      <li><a href="#" class="card-type active" data-action="click->infopanel#show" data-target="infopanel.item">ALPHATEC 821</a></li>
+                      <li><a href="#" class="card-type active" data-action="click->infopanel#show" data-target="infopanel.item">MAGNA 995</a></li>
+                      <li><a href="#" class="card-type active" data-action="click->infopanel#show" data-target="infopanel.item">ALPHATEC 921</a></li>
+                    </div>
+                    <div class="tab-pane fade grid-card list-inline" role="tabpanel" data-target="infopanel.content">
+                      <li><a href="#" class="card-type active" data-action="click->infopanel#show" data-target="infopanel.item">HYBRIFORCE 3600</a></li>
+                      <li><a href="#" class="card-type active" data-action="click->infopanel#show" data-target="infopanel.item">ALPHATEC 621</a></li>
+                    </div>
+                    <div class="tab-pane fade grid-card list-inline" role="tabpanel" data-target="infopanel.content">
+                      <li><a href="#" class="card-type active" data-action="click->infopanel#show" data-target="infopanel.item">MAGNA 790</a></li>
+                    </div>
+                    <div class="tab-pane fade grid-card list-inline" role="tabpanel" data-target="infopanel.content">
+                      <li><a href="#" class="card-type active" data-action="click->infopanel#show" data-target="infopanel.item">ALPHATEC 821</a></li>
+                      <li><a href="#" class="card-type active" data-action="click->infopanel#show" data-target="infopanel.item">MAGNA 868</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
 </div>
+
 
 <div class="intro" style="height: 696px;">
   <div class="container">

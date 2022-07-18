@@ -5,10 +5,10 @@
 <div class="container m-5">
   <div class="d-flex">
     <ul class=" d-flex list-inline">
-      <li><h2 class="p-4 font"><%= t'Alfalfa' %></h2></li>
-      <li><h2 class="p-4 font"><%= t'Sorgo' %></h2></li>
-      <li><h2 class="p-4 font-select"><%= t'Pasturas' %></h2></li>
-      <li><h2 class="p-4 font"><%= t'Cultivos' %></h2></li>
+      <li><h2 class="p-4 font"><%= link_to t('Alfalfa'), products_alfalfa_path, class:"font2" %></h2></li>
+      <li><h2 class="p-4 font"><%= link_to t('Sorgo'), products_sorgo_path, class:"font2"%></h2></li>
+      <li><h2 class="p-4 font-select"><%= link_to t('Pasturas'), products_pasturas_path, class:"font-select2" %></h2></li>
+      <li><h2 class="p-4 font"><%= link_to t('Cultivos'), products_cultivos_path, class:"font2" %></h2></li>
     </ul>
    </div>
 </div>
