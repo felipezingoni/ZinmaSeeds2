@@ -13,7 +13,66 @@
    </div>
 </div>
 
-<div class="intro" style="height: 696px;">
+
+<div class="container">
+  <div class="row container">
+      <div class="col-7">
+      <div class="grid-card list-inline">
+          <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#FESTUCA">FESTUCA</button></li>
+          <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#CEBADILLA">CEBADILLA</button></li>
+          <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#AGROPIRO">AGROPIRO</button></li>
+          <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#RYEGRASS">RYE GRASS</button></li>
+      </div>
+      </div>
+      <div class="col-5 d-flex">
+          <div class="espaciador2"></div>
+            <div class="tab-content accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="FESTUCA">
+                <h1 class="font-pro" style="font-size: 35px;">FESTUCA</h1>
+                <p class="desc-pro2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt ea. </p>
+                <div class="m-5">
+                  <%= link_to "#", class:"btn-ficha" do %>
+                    <p class="m-0 mx-1"><%= t'ficha' %></p>
+                    <p class="m-0 mx-1"><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1658257615/Zinma2.0/Vector-1_w6xmqf.svg") %></p>
+                  <% end %>
+                </div>
+              </div>
+              <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="CEBADILLA">
+                <h1 class="font-pro" style="font-size: 35px;">CEBADILLA</h1>
+                <p class="desc-pro2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt ea. </p>
+                <div class="m-5">
+                  <%= link_to "#", class:"btn-ficha" do %>
+                    <p class="m-0 mx-1"><%= t'ficha' %></p>
+                    <p class="m-0 mx-1"><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1658257615/Zinma2.0/Vector-1_w6xmqf.svg") %></p>
+                  <% end %>
+                </div>
+              </div>
+              <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="AGROPIRO">
+                <h1 class="font-pro" style="font-size: 35px;">AGROPIRO</h1>
+                <p class="desc-pro2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt ea. </p>
+                <div class="m-5">
+                  <%= link_to "#", class:"btn-ficha" do %>
+                    <p class="m-0 mx-1"><%= t'ficha' %></p>
+                    <p class="m-0 mx-1"><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1658257615/Zinma2.0/Vector-1_w6xmqf.svg") %></p>
+                  <% end %>
+                </div>
+              </div>
+              <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="RYEGRASS">
+                <h1 class="font-pro" style="font-size: 35px;">RYE GRASS</h1>
+                <p class="desc-pro2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt ea. </p>
+                <div class="m-5">
+                  <%= link_to "#", class:"btn-ficha" do %>
+                    <p class="m-0 mx-1"><%= t'ficha' %></p>
+                    <p class="m-0 mx-1"><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1658257615/Zinma2.0/Vector-1_w6xmqf.svg") %></p>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+      </div>
+  </div>
+</div>
+
+<div class="intro mt-5" style="height: 696px;">
   <div class="container">
     <div class="d-flex justify-content-center flex-column align-items-center w-50 p-5" style="margin: 0 auto;">
       <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1657911981/Zinma2.0/sorgo_1_qpsrr0.png", class:"position-absolute opacity-50") %>

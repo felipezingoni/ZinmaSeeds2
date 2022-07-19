@@ -52,6 +52,9 @@
   align-items: center;
   text-align: center;
   color: #6C7059;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .desc-pro {
@@ -74,6 +77,7 @@
     display: flex;
     justify-content: flex-start;
     color: #A58F73;
+    padding-left: 40px;
 }
 
 .pro-primer {
@@ -188,4 +192,23 @@
 .fade:not(.show) {
   display: none;
   opacity: 1;
+}
+
+.btn-ficha {
+  background: #FFFFFF;
+  border: 1px solid #7F816D;
+  border-radius: 28px;
+  color:rgba(127, 129, 109, 1);
+  font-family: 'Oakes Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 263px;
 }
