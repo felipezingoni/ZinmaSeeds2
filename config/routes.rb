@@ -7,7 +7,8 @@ Rails.application.routes.draw do
     get 'products/pasturas'
     get 'products/cultivos'
     get 'pages/aboutus'
-    # get 'pages/contact'
+    get 'pages/contact'
+    get 'contacts/message'
     resources :contacts, only: [:create, :new]
     root 'pages#home'
   end

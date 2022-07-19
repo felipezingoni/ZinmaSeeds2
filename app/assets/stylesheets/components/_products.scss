@@ -65,6 +65,16 @@
   text-align: center;
   color: #A58F73;
 }
+.desc-pro2 {
+  font-family: 'Oakes Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    display: flex;
+    justify-content: flex-start;
+    color: #A58F73;
+}
 
 .pro-primer {
   font-family: 'Trump Gothic';
@@ -123,7 +133,14 @@
   opacity: 0.8;
   border-radius: 10px;
   margin: 30px;
+}
 
+.espaciador2 {
+  width: 0px;
+  height: 200px !important;
+  border-right: 2px solid #D2D2D2;
+  opacity: 0.8;
+  margin: 10px;
 }
 
 .card-type {
@@ -143,6 +160,15 @@
   align-content: center;
   text-decoration:none;
   margin: 10px;
+  border: none;
+}
+
+.card-type:hover {
+  background-color: rgba(33, 33, 33, 0.1);
+}
+
+.card-type:active {
+  border: 1px solid gray;
 }
 
 .grid-card {

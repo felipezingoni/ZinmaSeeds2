@@ -71,8 +71,8 @@ Rails.application.configure do
   authentication: :plain,
   domain: 'zinmaseeds-app.herokuapp.com',
   enable_starttls_auto: true,
-  user_name: ENV['SENDGRID_USERNAME'],
-  password: ENV['SENDGRID_PASSWORD']
+  user_name: 'apikey',
+  password: '<SENDGRID_API_KEY>'
   }
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.

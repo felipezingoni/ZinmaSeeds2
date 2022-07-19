@@ -1,19 +1,99 @@
-<div class="product-banner">
-  <h1><%= t 'product-title' %></h1>
-</div>
+ <%# <div class="container" data-controller="infopanel" data-infopanel-index="0">
+        <div class="row">
+            <div class="col-7">
+                <div class="d-flex flex-row" lass="tab-pane fade show active grid-card list-inline list-group" role="tabpanel" data-target="infopanel.content">
+                    <a href="#" class="categoria active2" data-action="click->infopanel#show" data-target="infopanel.item">ALL</a>
+                    <li class="list-inline"><h5 class="espaciador"></h5></li>
+                    <a href="#" class="categoria" data-action="click->infopanel#show" data-target="infopanel.item">GL6</a>
+                    <li class="list-inline"><h5 class="espaciador"></h5></li>
+                    <a href="#" class="categoria" data-action="click->infopanel#show" data-target="infopanel.item">GL7</a>
+                    <li class="list-inline"><h5 class="espaciador"></h5></li>
+                    <a href="#" class="categoria" data-action="click->infopanel#show" data-target="infopanel.item">GL8</a>
+                    <li class="list-inline"><h5 class="espaciador"></h5></li>
+                    <a href="#" class="categoria" data-action="click->infopanel#show" data-target="infopanel.item">GL9</a>
+                </div>
+                <div class="tab-pane fade grid-card list-inline" role="tabpanel" data-target="infopanel.content">
+                      <li><a href="#" class="card-type" >HYBRIFORCE 3600</a></li>
+                      <li><a href="#" class="card-type" >ALPHATEC 621</a></li>
+                    </div>
+                    <div class="tab-pane fade grid-card list-inline" role="tabpanel" data-target="infopanel.content">
+                      <li><a href="#" class="card-type" >MAGNA 790</a></li>
+                    </div>
+                    <div class="tab-pane fade grid-card list-inline" role="tabpanel" data-target="infopanel.content">
+                      <li><a href="#" class="card-type" >ALPHATEC 821</a></li>
+                      <li><a href="#" class="card-type" >MAGNA 868</a></li>
+                    </div>
+                    <div class="tab-pane fade grid-card list-inline" role="tabpanel" data-target="infopanel.content">
+                      <li><a href="#" class="card-type" >MAGNA 995</a></li>
+                      <li><a href="#" class="card-type" >ALPHATEC 921</a></li>
+                    </div>
+                </div>
+            </div>
+          </div>
 
+    <div class="container" data-controller="titulo" data-titulo-index="0">
+        <div class="row">
+            <div class="col-7">
+                <div class="grid-card tab-pane fade show active list-group list-inline list-group">
+                      <li><a href="#" class="card-type activo" data-action="click->titulo#show" data-target="titulo.title" >HYBRIFORCE 3600</a></li>
+                      <li><a href="#" class="card-type" data-action="click->titulo#show" data-target="titulo.title">ALPHATEC 621</a></li>
+                      <li><a href="#" class="card-type" data-action="click->titulo#show" data-target="titulo.title">MAGNA 790</a></li>
+                      <li><a href="#" class="card-type" data-action="click->titulo#show" data-target="titulo.title">MAGNA 868</a></li>
+                      <li><a href="#" class="card-type" data-action="click->titulo#show" data-target="titulo.title">ALPHATEC 821</a></li>
+                      <li><a href="#" class="card-type" data-action="click->titulo#show" data-target="titulo.title">MAGNA 995</a></li>
+                      <li><a href="#" class="card-type" data-action="click->titulo#show" data-target="titulo.title">ALPHATEC 921</a></li>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="">
+                <div class="espaciador2"></div>
+                  <div class="tab-content">
+                    <div class="tab-pane disabled active" role="tabpanel" data-target="titulo.description">
+                      <h1>HYBRIFORCE 3600</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt ea. </p>
+                    </div>
+                    <div class="tab-pane " role="tabpanel" data-target="titulo.description">
+                      <h1>ALPHATEC 621</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt ea. </p>
+                    </div>
+                    <div class="tab-pane " role="tabpanel" data-target="titulo.description">
+                      <h1>MAGNA 790</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt ea. </p>
+                    </div>
+                    <div class="tab-pane " role="tabpanel" data-target="titulo.description">
+                      <h1>MAGNA 868</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt ea. </p>
+                    </div>
+                    <div class="tab-pane " role="tabpanel" data-target="titulo.description">
+                      <h1>ALPHATEC 821</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt ea. </p>
+                    </div>
+                    <div class="tab-pane " role="tabpanel" data-target="titulo.description">
+                      <h1>MAGNA 995</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt ea. </p>
+                    </div>
+                    <div class="tab-pane " role="tabpanel" data-target="titulo.description">
+                      <h1>ALPHATEC 921</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt ea. </p>
+                    </div>
+                 </div>
+                </div>
+                </div>
+            </div>
+        </div>
 
-<div class="container m-5">
-  <div class="d-flex">
-    <% @products.each do |product| %>
-      <h2 class="p-4 font"><%= product.name %></h2>
-    <% end %>
-   </div>
-</div>
+    </div>
+</div> %>
 
-<div class="intro">
-  <% if @products == "Al" %>
-
-  <% end %>
-
-</div>
+<p>
+      <button class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+        Toggle width collapse
+      </button>
+    </p>
+    <div style="min-height: 120px;">
+      <div class="collapse-horizontal collapse" id="collapseWidthExample" style="">
+        <div class="card card-body" style="width: 300px;">
+          This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+        </div>
+      </div>
+    </div>
