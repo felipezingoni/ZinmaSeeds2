@@ -2,11 +2,19 @@
 
 <div class="intro">
   <div class="container">
-    <h1 class="title-zinma">ZINMA SEEDS</h1>
-    <div class="col-5">
-      <p class="description-zinma"><%= t 'description' %></p>
+      <div class="row">
+      <div class="col-12">
+          <h1 class="title-zinma">ZINMA SEEDS</h1>
+          <div class="col-5">
+            <p class="description-zinma"><%= t 'description' %></p>
+          </div>
+          <%= link_to t('boton'), "#", class:"boton" %>
+        </div>
+        <%# <div class="">
+           <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1658274271/Zinma2.0/Arrow116_nyrqms.svg", class:"arrow") %>
+           <%# <p class="pro-primer">Productos de primera calidad</p>
+        </div> %>
     </div>
-    <%= link_to t('boton'), "#", class:"boton" %>
   </div>
 
   <div>
@@ -28,6 +36,10 @@
       <div class="mt-5">
         <%= link_to t('boton2-home'), "#", class:"boton" %>
       </div>
+      <div class="d-flex justify-content-center">
+        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1658346362/Zinma2.0/Arrow17_x6uwd0.svg") %>
+      </div>
+        <p class="d-flex justify-content-center pro-primer m-4">Estamos ubicados estratégicamente</p>
     </div>
     <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656040157/Zinma2.0/DJI_0863_1_qymoix.png") %>
   </div>

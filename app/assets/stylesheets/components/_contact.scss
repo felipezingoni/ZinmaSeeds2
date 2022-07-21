@@ -54,3 +54,35 @@
   line-height: 182.72%;
   color: #6C7059;
 }
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 81px;
+  border-radius: 8px;
+  background: #9c9c9c12;
+  box-shadow: 29px 29px 48px #e0e0e0, -29px -29px 48px #ffffff;
+  width: 680px;
+  h1 {
+    font-family: 'Trump Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100.72%;
+    color: #6C7059;
+    margin: 10px;
+  }
+  p {
+    width: 400px;
+    text-align: center;
+    font-family: 'Oakes Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    color: #A58F73;
+  }
+}
