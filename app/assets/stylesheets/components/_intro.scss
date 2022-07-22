@@ -5,11 +5,51 @@
 
 
 .title-zinma {
-  padding-top: 7%;
+  margin-top: 7%;
   font-size: 60px;
+  // letter-spacing: 4px;
   color: var(--main-font-color);
   font-family: "Trump Gothic";
   font-weight: bold;
+  position: relative;
+  width: max-content;
+  place-content: center;
+}
+
+.title-zinma::before,
+.title-zinma::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.title-zinma::before {
+  background: var(--main-bg-color);
+  animation: typewriter 6s steps(11) 1s forwards;
+}
+
+.title-zinma::after {
+  width: 0.125em;
+  height: 70px;
+  background: rgb(174, 174, 174);
+  animation: typewriter 6s steps(11) 1s forwards,
+    blink 750ms steps(11) infinite;
+}
+
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
 }
 
 .description-zinma {

@@ -86,3 +86,34 @@
   height: 90vh;
   width: 100%;
 }
+
+.slide-up {
+  animation: slide-up 1.9s cubic-bezier(0.65, 0, 0.35, 1)
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(80px)
+  }
+  100%{
+    transform: translateY(0)
+  }
+}
+
+.slide-down {
+  animation: slide-down 1.9s cubic-bezier(0.65, 0, 0.35, 1)
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-80px)
+  }
+
+  100% {
+    transform: translateY(0px)
+  }
+}
+
+.carousel-item {
+  transition: transform 0.5s ease-out;
+}
