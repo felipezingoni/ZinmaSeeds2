@@ -57,9 +57,7 @@
   padding: 11px;
   margin-bottom: 10px;
   box-sizing: border-box;
-  /* background: #ababab; */
   border-radius: 5px;
-  border: 1px solid #a3a3a336;
   text-align: center;
   display: flex;
   align-content: center;
@@ -67,7 +65,7 @@
 }
 .selectField.active,
 .selectField:hover {
-    border: 1px solid #6060604f;
+    background-color: #f8f6f45b;
 }
 
 .selectText {

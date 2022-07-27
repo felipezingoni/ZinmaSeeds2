@@ -1,7 +1,7 @@
 .carousel-points {
-  width: 14px;
+  width: 14px !important;
   border-radius: 50%;
-  height: 14px;
+  height: 14px !important;
   box-sizing: content-box;
   flex: 0 1 auto;
   padding: 0;
@@ -62,7 +62,6 @@
 }
 .boton-w {
   background: #FFFFFF;
-  border: 1px solid #7F816D;
   border-radius: 28px;
   color: rgba(127, 129, 109, 1);
   text-decoration: none;
@@ -73,6 +72,9 @@
   line-height: 16px;
   padding: 18px 40px;
   gap: 12px;
+}
+.boton-w:hover {
+  background: #F5F5F5;
 }
 
 .ban2{
@@ -117,3 +119,8 @@
 .carousel-item {
   transition: transform 0.5s ease-out;
 }
+
+// .carousel-indicators {
+//   width: 15px !important;
+//   height: 15px !important;
+// }

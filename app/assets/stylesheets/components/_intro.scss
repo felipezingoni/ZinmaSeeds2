@@ -16,30 +16,6 @@
   place-content: center;
 }
 
-.title-zinma::before,
-.title-zinma::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.title-zinma::before {
-  background: var(--main-bg-color);
-  animation: typewriter 6s steps(11) 1s forwards;
-}
-
-.title-zinma::after {
-  width: 0.125em;
-  height: 70px;
-  background: rgb(174, 174, 174);
-  animation: typewriter 6s steps(11) 1s forwards,
-    blink 750ms steps(11) infinite;
-}
-
-
 @keyframes typewriter {
   to {
     left: 100%;
@@ -64,7 +40,7 @@
 .boton {
   background-color: var(--main-font-color) ;
   width: 178px;
-  height: 52px;
+  height: 61px;
   border-radius: 28px;
   color: white;
   font-size: 16px;
@@ -75,4 +51,11 @@
   padding-bottom: 18px;
   font-family: "Oakes Grotesk";
   font-weight: 500;
+  border: none;
+}
+
+.boton:hover {
+  border: 1px solid #7F816D;
+  color:rgba(127, 129, 109, 1);
+  background-color: transparent;
 }

@@ -9,7 +9,7 @@
       <p class="quienes-descr"><%= t 'quienes-descr' %></p>
       <p class="quienes-descr"><%= t 'quienes-descr2' %></p>
       <br>
-      <button type="button" class="boton m-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <button type="button" class="boton m-3 mx-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
         <%=  t('boton') %>
       </button>
       <%= render 'shared/modal' %>
@@ -32,7 +32,9 @@
       <h1 class="title-obj"><%= t 'title-objetivos' %></h1>
       <p class="descr-obj"><%= t 'descr-objetivos' %></p>
       <br>
-      <%= link_to t('boton'), "#", class:"boton m-5" %>
+      <button type="button" class="boton m-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <%=  t('boton') %>
+      </button>
     </div>
   </div>
 </div>
