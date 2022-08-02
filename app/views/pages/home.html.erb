@@ -3,12 +3,14 @@
 <div class="intro">
   <div class="container">
       <div class="row">
-      <div class="col-12">
+      <div class="col-12 col-md-12">
           <h1 class="title-zinma">ZINMA SEEDS</h1>
-          <div class="col-5" data-aos="fade-up">
+          <div class="col-sm-12 col-lg-5 " data-aos="fade-up">
             <p class="description-zinma" ><%= t 'description' %></p>
           </div>
-          <%= link_to t('boton'), pages_contact_path, class:"boton" %>
+          <div class="boton-div">
+            <%= link_to t('boton'), pages_contact_path, class:"boton" %>
+          </div>
         </div>
         <%# <div class="">
            <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1658274271/Zinma2.0/Arrow116_nyrqms.svg", class:"arrow") %>
@@ -30,18 +32,19 @@
 
 <div class="intro">
   <div class="d-flex align-items-center justify-content-between" style="padding-top: 7%;">
-    <div class="mx-5">
+    <div class="mx-5 toc">
       <h1 class="donde-title"><%= t 'donde-estamos' %></h1>
-      <p class="donde-desc" style="width: 474px;"><%= t 'desc-donde' %></p>
+      <p class="donde-desc"><%= t 'desc-donde' %></p>
       <div class="mt-5">
         <%= link_to t('boton2-home'), "#", class:"boton" %>
       </div>
       <div class="d-flex" style="position: relative;left: 72%;">
-        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1658346362/Zinma2.0/Arrow17_x6uwd0.svg") %>
+        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1658346362/Zinma2.0/Arrow17_x6uwd0.svg", class:"flechas") %>
       </div>
-        <p class="d-flex justify-content-center pro-primer m-4">Estamos ubicados estratégicamente</p>
+        <p class="pro-primer m-4" data-aos="fade-up"
+        data-aos-duration="3000">Estamos ubicados estratégicamente</p>
     </div>
-    <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656040157/Zinma2.0/DJI_0863_1_qymoix.png") %>
+    <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656040157/Zinma2.0/DJI_0863_1_qymoix.png", class:"plantas") %>
   </div>
 
 </div>

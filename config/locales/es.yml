@@ -20,8 +20,28 @@ es:
 
   product-title: "Productos "
   Alfalfa: "Alfalfa"
+  HYBRIFORCE: "Alfalfa híbrida de tercera generación mejorada por rendimiento, calidad y persistencia, con respecto a su antecesora."
+  ALPHATEC621: "Variedad de alfalfa sintética de latencia intermedia (6) seleccionada en lotes con larga historia de pastoreo. Se adapta a sistemas de pastoreo directo o corte, respetando un óptimo de 6 o 7 pastoreos/ cortes por año."
+  MAGNA790: "Variedad desarrollada en Argentina en base a genética elite americana. Destacada por su excelente perfil sanitario, principalmente su alta resistencia a pulgones."
+  MAGNA868: "Cultivo seleccionado en base a su resistencia a pulgones, vigor de las plantas, aspecto, resistencia al virus de mosaico de la alfalfa y persistencia."
+  ALPHATEC821: "Variedad de alfalfa sintética sin latencia (8) seleccionada por su adaptabilidad a variados ambientes productivos."
+  MAGNA995: "Variedad perteneciente al grupo de las sin latencia, de alta producción de forraje."
+  ALPHATEC921: "Variedad de alfalfa sintética con un Índice de latencia de caída de 9."
+
   Sorgo: "Sorgo"
+  SORGO1301: "Planta de gran capacidad de rebrote, ideal para pastoreos rotativos intensivos. Preseneta un alto potencial genético."
+  SORG01310PSS: " Planta de gran capacidad de rebrote, ideal para pastoreos rotativos intensivos. Presenta un alto potecial genético."
+  SORGOZ1220: "Excelente potencial de produccion. Planta de porte mediano con una panoja razonable, con tallos finos, hojas largas y angostas con la nervadura central marrón."
+  SORGO2491: "Sorgo híbrido Doble propósito, de ciclo semi tardío con alto contenido de taninos en grano y con buen rendimiento en kilos por ha."
+  SORGO3591: "Sorgo granífero de ciclo intermedio-corto. Excelente exerción y buen potencial de rendimiento en buenos ambientes."
+  SORGO750: "Planta de gran capacidad de rebrote, idealpara pastoreos rotativos intensivos."
+  SORGO1497: "Híbrido fotosensitivo de alto porte y elevada produccion de biomasa. Ideal para pastoreo diferido y generación de bioenergía."
+
   Pasturas: "Pasturas"
+  FESTUCA: "Variedad de festuca de tipo continental. Es un material de buen vigor inicial. Posee una alta densidad de macollos. Hojas color verde, de intermedias a anchas. De porte semipostrado. Destaca su alta palatabilidad de hojas."
+  CEBADILLA: "Presenta gran vigor inicial, porte erecto y mayor persistencia que Martín Fierro. Seleccionada sobre genotipos de familia de alto vigor primavero- estival."
+  AGROPIRO: "Buen vigor inicial – destacada Producción (MS) Invernal. Alta producción de forraje. Excelente producción en primavera temprana. Porte de planta semi erecto."
+
   Cultivos: "Cultivos de Servicios"
   ficha: "Descargar ficha técnica"
 

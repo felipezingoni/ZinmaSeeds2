@@ -1,13 +1,13 @@
-<div class=" navbar">
+<%# <div class="navbar">
   <div class="container d-flex justify-content-between align-items-center ">
-    <%= image_tag "https://res.cloudinary.com/ddlmgs04n/image/upload/v1656730797/Zinma2.0/Zinma_full_color_1_foraz2.svg" %>
+    <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1659113274/Zinma2.0/Zinma_full_color_ymgqie.png", style:"width:80px;height:80px") %>
 
-    <div class="d-flex justify-content-between align-items-center", style="width: 38%;">
+    <%# <div class="d-flex justify-content-between align-items-center", style="width: 38%;">
       <%= link_to "Home", root_path, class:"nav-letter nav2-link" %>
-      <%= link_to "Productos", products_alfalfa_path, class:"nav-letter nav2-link" %>
-      <%= link_to "Nosotros", pages_aboutus_path, class:"nav-letter nav2-link" %>
-      <%= link_to "Contacto", pages_contact_path, class:"nav-letter nav2-link" %>
-    </div>
+      <%# <%= link_to "Productos", products_alfalfa_path, class:"nav-letter nav2-link" %>
+      <%# <%= link_to "Nosotros", pages_aboutus_path, class:"nav-letter nav2-link" %>
+      <%# <%= link_to "Contacto", pages_contact_path, class:"nav-letter nav2-link" %>
+    <%# </div>
 
 
 
@@ -16,13 +16,76 @@
 
         <div class="selectField" data-action="click->language#toggle">
             <% if root_path(locale: :en)  %>
-               <span ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656442590/Zinma2.0/emojione_flag-for-united-states_magqgf.svg") %></span>
-            <% elsif root_path(locale: :es) %>
-               <span ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656442838/Zinma2.0/emojione_flag-for-argentina_zapp7v.svg") %></span>
-            <% end %>
+               <%# <span ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656442590/Zinma2.0/emojione_flag-for-united-states_magqgf.svg") %>
+            <%# <% elsif root_path(locale: :es) %>
+               <%# <span ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656442838/Zinma2.0/emojione_flag-for-argentina_zapp7v.svg") %>
+            <%# <% end %>
 
-            <p id="selectText" ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656445824/Zinma2.0/Vector_lcaew7.svg") %></p>
+            <%# <p id="selectText" ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1659112985/Zinma2.0/chevron_s2hgiq.svg") %>
+        <%# </div>
+
+        <ul class="list hide" data-language-target="element">
+          <li class="options show active" >
+            <%= link_to root_path(locale: :es) do %>
+              <%# <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656442838/Zinma2.0/emojione_flag-for-argentina_zapp7v.svg") %>
+            <%# <% end %>
+          <%# </li>
+
+          <li class="options" >
+            <%= link_to root_path(locale: :en) do %>
+              <%# <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656442590/Zinma2.0/emojione_flag-for-united-states_magqgf.svg") %>
+            <%# <% end %>
+          <%# </li>
+        </ul>
+
+        <div>
+
         </div>
+      </div>
+  </div> %>
+<%# </div> %>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+  <div class="container d-flex justify-content-between align-items-center flex-md-space-between ">
+    <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1659113274/Zinma2.0/Zinma_full_color_ymgqie.png", style:"width:80px;height:80px") %>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="d-flex justify-content-between align-items-center", style="width: 38%;">
+      <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active px-4">
+                <%= link_to "Home", root_path, class:"nav-letter nav2-link" %>
+              </li>
+              <li class="nav-item px-4">
+                <%= link_to "Productos", products_alfalfa_path, class:"nav-letter nav2-link" %>
+              </li>
+              <li class="nav-item px-4">
+                <%= link_to "Nosotros", pages_aboutus_path, class:"nav-letter nav2-link" %>
+              </li>
+              <li class="nav-item px-4">
+                <%= link_to "Contacto", pages_contact_path, class:"nav-letter nav2-link" %>
+              </li>
+            </ul>
+      </div>
+    </div>
+
+     <div class="selector" data-controller="language">
+
+
+        <div class="selectField" data-action="click->language#toggle">
+            <% if root_path(locale: :en)  %>
+               <span ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656442590/Zinma2.0/emojione_flag-for-united-states_magqgf.svg") %></span>
+           <% elsif root_path(locale: :es) %>
+               <span ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656442838/Zinma2.0/emojione_flag-for-argentina_zapp7v.svg") %></span>
+           <% end %>
+
+           <p id="selectText" ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1659112985/Zinma2.0/chevron_s2hgiq.svg") %></p>
+       </div>
 
         <ul class="list hide" data-language-target="element">
           <li class="options show active" >
@@ -33,15 +96,11 @@
 
           <li class="options" >
             <%= link_to root_path(locale: :en) do %>
-              <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656442590/Zinma2.0/emojione_flag-for-united-states_magqgf.svg") %>
-            <% end %>
-          </li>
+               <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656442590/Zinma2.0/emojione_flag-for-united-states_magqgf.svg") %>
+             <% end %>
+         </li>
         </ul>
-      </div>
 
-
-
-
-
+        <div>
   </div>
-</div>
+</nav>

@@ -125,7 +125,14 @@
 
 .banner2 {
   height: 671px;
-  width: fit-content;
+  // width: fit-content;
+  background-image: url("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656038076/Zinma2.0/DSC06257_1_d0c22j.png");
+  background-position: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
 
   .img-banner2 {
     background: linear-gradient(90deg, rgba(51, 51, 51, 0.5) 0%, rgba(51, 51, 51, 0.35) 39.37%, rgba(51, 51, 51, 0.2) 60.77%, rgba(51, 51, 51, 0.08) 81.91%, rgba(51, 51, 51, 0) 100%);
@@ -141,8 +148,9 @@
   z-index: 1;
   line-height: 114.72%;
   position: relative;
-  top: -449px;
-  left: 315px;
+  top: 0px;
+  left: 0px;
+  text-align: center;
   max-width: 817px;
 }
 
@@ -158,6 +166,7 @@
   font-weight: 400;
   font-size: 16px;
   color: #A58F73;
+  width: 474px;
 }
 
 
@@ -266,4 +275,93 @@
   position: absolute;
   left: 734.28px;
   top: 909px;
+}
+
+.scroll {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .title-zinma {
+    margin: auto;
+    margin-top: 44px;
+  }
+  .description-zinma {
+    text-align: center;
+    padding: 25px;
+  }
+  .boton-div {
+    display: flex;
+    justify-content: center;
+  }
+  .title-products {
+    font-size: 42px;
+  }
+
+  .scroll {
+    overflow-x: scroll;
+    width: 100%;
+    margin: 12px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .banner2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  .img-banner2 {
+    display: block;
+  }
+
+  .cont {
+    font-size: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  }
+  .plantas {
+    display: none;
+  }
+  .donde-title {
+    font-size: 50px;
+    width: fit-content;
+  }
+  .donde-desc {
+    font-size: 12px;
+    width: 100%;
+  }
+  .toc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pro-primer {
+    display: none !important;
+  }
+  .flechas {
+    display: none;
+  }
+  .boton {
+    font-size: 14px;
+  }
+
+  .intro {
+    height: 550px;
+  }
+
+  .svg {
+    position: relative;
+    left: -134px;
+   }
+
+  .footerhover {
+    padding: 0.5rem;
+  }
 }
