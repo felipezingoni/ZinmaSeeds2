@@ -2,13 +2,13 @@
   <h1><%= t 'product-title' %></h1>
 </div>
 
-<div class="container m-5">
+<div class="container container-sm m-sm-5">
   <div class="d-flex">
     <ul class=" d-flex list-inline">
-      <li><h2 class="p-4 font"><%= link_to t('Alfalfa'), products_alfalfa_path, class:"font2" %></h2></li>
-      <li><h2 class="p-4 font"><%= link_to t('Sorgo'), products_sorgo_path, class:"font2" %></h2></li>
-      <li><h2 class="p-4 font"><%= link_to t('Pasturas'), products_pasturas_path, class:"font2" %></h2></li>
-      <li><h2 class="p-4 font-select"><%= link_to t('Cultivos'), products_cultivos_path, class:"font-select2" %></h2></li>
+      <li><h2 class="font"><%= link_to t('Alfalfa'), products_alfalfa_path, class:"font2" %></h2></li>
+      <li><h2 class="font"><%= link_to t('Sorgo'), products_sorgo_path, class:"font2" %></h2></li>
+      <li><h2 class="font"><%= link_to t('Pasturas'), products_pasturas_path, class:"font2" %></h2></li>
+      <li><h2 class="font-select"><%= link_to t('Cultivos'), products_cultivos_path, class:"font-select2" %></h2></li>
     </ul>
    </div>
 </div>
@@ -22,12 +22,12 @@
           <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#AVENANEGRA">AVENA NEGRA</button></li>
       </div>
       </div>
-      <div class="col-5 d-flex">
+      <div class="col-5s d-flex">
           <div class="espaciador2"></div>
             <div class="tab-content accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="RABANITO">
                 <h1 class="font-pro" style="font-size: 35px;">RABANITO</h1>
-                <p class="desc-pro2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt ea. </p>
+                <p class="desc-pro2">Variedad de rabanito forrajero (Rapahanus sativus sp. oleiferus) que produce una gran cantidad de biomasa. Tiene muy buena capacidad de rebrote luego de un corte o pastoreo.</p>
                 <div class="m-5">
                   <%= link_to "#", class:"btn-ficha" do %>
                     <p class="m-0 mx-1"><%= t'ficha' %></p>
@@ -37,7 +37,7 @@
               </div>
               <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="VICIA">
                 <h1 class="font-pro" style="font-size: 35px;">VICIA</h1>
-                <p class="desc-pro2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt ea. </p>
+                <p class="desc-pro2">Cultivar de vicia villosa de ciclo corto (llega a floración 15 días antes que los cultivares locales), seleccionado por su resistencia a frío en las etapas iniciales de su desarrollo.</p>
                 <div class="m-5">
                   <%= link_to "#", class:"btn-ficha" do %>
                     <p class="m-0 mx-1"><%= t'ficha' %></p>
@@ -47,7 +47,7 @@
               </div>
               <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="AVENANEGRA">
                 <h1 class="font-pro" style="font-size: 35px;">AVENA NEGRA</h1>
-                <p class="desc-pro2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt ea. </p>
+                <p class="desc-pro2">Variedad de Avena negra (Avena strigosa Schreb.) doble propósito, ya que se puede usar tanto para cobertura como para pastoreo. Se destaca por su elevada resistencia a roya.</p>
                 <div class="m-5">
                   <%= link_to "#", class:"btn-ficha" do %>
                     <p class="m-0 mx-1"><%= t'ficha' %></p>
@@ -64,16 +64,16 @@
 
 <div class="intro mt-5" style="height: 696px;">
   <div class="container">
-    <div class="d-flex justify-content-center flex-column align-items-center w-50 p-5" style="margin: 0 auto;">
+    <div class="d-flex justify-content-center flex-column align-items-center p-5 products-zinmas" >
       <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1657911981/Zinma2.0/sorgo_1_qpsrr0.png", class:"position-absolute opacity-50") %>
       <h1 class="font-pro m-4"><%= t'Cultivos' %></h1>
       <p class="desc-pro m-4">Zinma Seeds tiene cultivos de cobertura para mantener la rentabilidad del campo, incluso entre las plantaciones de cultivos comerciales. Nuestra selección de semillas de cultivos de cobertura puede ayudar a suprimir los nematodos, mejorar la labranza del suelo y dejar un valioso nitrógeno en el suelo para el cultivo posterior.</p>
     </div>
       <div class="d-flex justify-content-center">
         <p class="pro-primer">Productos de primera calidad</p>
-        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1657911134/Zinma2.0/Arrow_16_futvng.svg") %>
+        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1657911134/Zinma2.0/Arrow_16_futvng.svg", class:"flechas-pro") %>
         <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1655855223/Zinma2.0/cultivo-de-servicio1_uknlor.png",  class:"bolsa") %>
-        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1657911030/Zinma2.0/Arrow_17_udmr0w.svg") %>
+        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1657911030/Zinma2.0/Arrow_17_udmr0w.svg", class:"flechas-pro") %>
         <p class="pro-rend">Rendimiento comprobado</p>
       </div>
   </div>

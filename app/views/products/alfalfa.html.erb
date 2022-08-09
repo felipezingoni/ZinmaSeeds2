@@ -2,13 +2,13 @@
   <h1><%= t 'product-title' %></h1>
 </div>
 
-<div class="container m-5">
+<div class="container container-sm m-sm-5">
   <div class="d-flex">
     <ul class=" d-flex list-inline">
-      <li><h2 class="p-4 font-select"><%= link_to t('Alfalfa'), "#", class:"font-select2" %></h2></li>
-      <li><h2 class="p-4 font"><%= link_to t('Sorgo'), products_sorgo_path, class:"font2"  %></h2></li>
-      <li><h2 class="p-4 font"><%= link_to t('Pasturas'), products_pasturas_path, class:"font2" %></h2></li>
-      <li><h2 class="p-4 font"><%= link_to t('Cultivos'), products_cultivos_path, class:"font2" %></h2></li>
+      <li><h2 class="font-select"><%= link_to t('Alfalfa'), "#", class:"font-select2" %></h2></li>
+      <li><h2 class="font"><%= link_to t('Sorgo'), products_sorgo_path, class:"font2"  %></h2></li>
+      <li><h2 class="font"><%= link_to t('Pasturas'), products_pasturas_path, class:"font2" %></h2></li>
+      <li><h2 class="font"><%= link_to t('Cultivos'), products_cultivos_path, class:"font2" %></h2></li>
     </ul>
   </div>
 
@@ -31,7 +31,7 @@
             </div>
           </div>
             <div class="row">
-                <div class=" col-7">
+                <div class="col-7">
                     <div class="tab-pane fade show active grid-card list-inline list-group" role="tabpanel" data-target="infopanel.content">
                       <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#HYBRIFORCE">HYBRIFORCE 3600</button></li>
                       <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#ALPHATEC621">ALPHATEC 621</button></li>
@@ -57,7 +57,7 @@
                       <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#ALPHATEC921">ALPHATEC 921</button></li>
                     </div>
                 </div>
-                <div class="col-5 d-flex">
+                <div class="col-5s d-flex">
                   <div class="espaciador2"></div>
                   <div class="tab-content accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="HYBRIFORCE">
@@ -139,16 +139,16 @@
 
 <div class="intro mt-5" style="height: 696px;">
   <div class="container">
-    <div class="d-flex justify-content-center flex-column align-items-center w-50 p-5" style="margin: 0 auto;">
+    <div class="d-flex justify-content-center flex-column align-items-center p-5 products-zinmas" >
       <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1657911981/Zinma2.0/sorgo_1_qpsrr0.png", class:"position-absolute opacity-50") %>
       <h1 class="font-pro m-4"><%= t'alfalfa' %></h1>
       <p class="desc-pro m-4">Zinma Seeds ofrece varias variedades de alfalfa para satisfacer sus necesidades. Tenemos variedades en grupos de latencia 2-9 para adaptarse a una amplia gama de geografías y estilos de gestión. Nuestras alfalfas tienen un rendimiento probado año tras año, incluso en los entornos mas duros.</p>
     </div>
       <div class="d-flex justify-content-center">
         <p class="pro-primer">Productos de primera calidad</p>
-        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1657911134/Zinma2.0/Arrow_16_futvng.svg") %>
+        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1657911134/Zinma2.0/Arrow_16_futvng.svg", class:"flechas-pro") %>
         <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1655855223/Zinma2.0/alfalfa1_jasmms.png",  class:"bolsa") %>
-        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1657911030/Zinma2.0/Arrow_17_udmr0w.svg") %>
+        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1657911030/Zinma2.0/Arrow_17_udmr0w.svg", class:"flechas-pro") %>
         <p class="pro-rend">Rendimiento comprobado</p>
       </div>
   </div>

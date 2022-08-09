@@ -283,9 +283,16 @@
   align-items: center;
   text-align: center;
 }
+.mapardo {
+  overflow-x: hidden;
+}
+.plantas {
+  overflow-x: hidden;
+
+}
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .title-zinma {
     margin: auto;
     margin-top: 44px;
@@ -353,7 +360,7 @@
   }
 
   .intro {
-    height: 550px;
+    height: 502px;
   }
 
   .svg {
@@ -364,4 +371,78 @@
   .footerhover {
     padding: 0.5rem;
   }
+  .mapardo {
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 394px) {
+  .boton-w {
+    font-size: 12px;
+  }
+
+  .ban-2 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 968px) {
+    .scroll {
+      overflow-x: scroll;
+      width: 100%;
+      margin: 12px;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .plantas {
+      overflow-x: hidden;
+      height: 331px;
+    }
+    .mapardo {
+      overflow-x: hidden;
+    }
+    .burger {
+      display: block;
+    }
+    .selector {
+      display: none;
+    }
+    .down-navbar {
+      background-color: whitesmoke;
+      position: absolute;
+      top: 108px;
+      left: 0;
+      height: max-content;
+      width: 100%;
+      text-align: center;
+    }
+        .navbar-collapse {
+          height: 398px;
+        }
+
+        .navbar-nav {
+          font-size: 47px;
+          align-items: flex-start;
+        }
+
+        .nav-letter {
+          font-size: 26px;
+        }
+        .intro {
+          height: 437px;
+        }
+    .carousel {
+      height: 74vh;
+    }
+}
+
+
+@media screen and (max-width: 1278px) {
+  .scroll {
+      overflow-x: scroll;
+      width: 100%;
+      margin: 12px;
+      display: flex;
+      justify-content: flex-start;
+    }
 }

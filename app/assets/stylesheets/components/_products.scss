@@ -23,6 +23,7 @@
   display: flex;
   align-items: center;
   color: #D2D2D2;
+  padding: 1.5rem
 }
 
 .font-select{
@@ -35,6 +36,7 @@
     align-items: center;
     color: #272727;
     border-bottom: 6px solid #A58F73;
+    padding: 1.5rem
 }
 
 .bolsa {
@@ -52,9 +54,9 @@
   align-items: center;
   text-align: center;
   color: #6C7059;
-  padding-left: 40px;
   padding-top: 40px;
   padding-bottom: 20px;
+  padding-left: 40px;
 }
 
 .desc-pro {
@@ -213,4 +215,93 @@
   align-content: center;
   justify-content: center;
   width: 263px;
+}
+.col-5s {
+  flex: 0 0 auto;
+  width: 41.66666667%;
+}
+
+.products-zinmas {
+  margin: 0 auto;
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .font-pro {
+    padding-left: 0px;
+  }
+  .font-select {
+    font-size: 20px;
+    border-bottom: 5px solid #A58F73;
+    padding: 0.5rem
+  }
+  .font {
+    font-size: 20px;
+    padding: 0.5rem
+  }
+  .espaciador {
+    display: none;
+  }
+  .espaciador2 {
+    display: none;
+  }
+  .categoria {
+    margin: 10px;
+  }
+  .grid-card {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+  .col-5s {
+    flex: none;
+    width: 100%;
+  }
+
+  .desc-pro {
+    width: 80%;
+    font-size: 13px;
+  }
+  .desc-pro2 {
+    padding: 0px;
+    width: 90%;
+  }
+
+  .products-zinmas {
+    margin: 10px;
+    width: 100%;
+  }
+
+  .pro-primer,
+  .pro-rend,
+  .flechas-pro {
+    display: none;
+  }
+    .bolsa {
+      display: none;
+    }
+  .m-sm-5 {
+    margin-top: 12px;
+  }
+
+
+}
+@media (min-width: 768px) and (max-width: 968px) {
+  .espaciador2 {
+      display: none;
+    }
+  .col-5s {
+    flex: none;
+    width: 100%;
+  }
+
+  .products-zinmas {
+    margin: 0 auto;
+    width: 100%;
+  }
+    .pro-primer,
+    .pro-rend,
+    .flechas-pro {
+      display: none;
+    }
+
 }

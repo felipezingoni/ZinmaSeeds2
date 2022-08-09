@@ -4,8 +4,8 @@
 
 
 <div class="container">
-  <div class="row mt-5 f-flex justify-content-evenly align-items-center">
-    <div class="col-3">
+  <div class="row mt-5 f-flex justify-content-evenly  align-items-start">
+    <div class="col-3s">
       <h3 class="contact-zinma">Zinma Seeds Argentina</h3>
       <hr class="contact-palo">
       <div class="d-flex flex-column">
@@ -26,11 +26,11 @@
       </div>
     </div>
 
-    <div class="col-1">
+    <div class="col-1 col-1s">
       <h1 class="espaciador"></h1>
     </div>
 
-    <div class="col-3">
+    <div class="col-3s">
       <h3 class="contact-zinma">Zinma Seeds Usa</h3>
       <hr class="contact-palo">
       <div class="d-flex flex-column">
@@ -46,8 +46,7 @@
         <div class="d-flex">
           <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656624428/Zinma2.0/Group_230_txkqmk.svg", style:"width:48px; margin-bottom: 20px;") %>
           <p class="p-3 contact-info">Dan Gardner <br>
-              dgardner@zinmaseeds.com <br>
-              info@zinmaseeds.com</p>
+              dgardner@zinmaseeds.com <br> info@zinmaseeds.com</p>
         </div>
       </div>
     </div>
@@ -55,20 +54,21 @@
   </div>
 </div>
 
-<div class="intro">
+<div class="intros">
   <div class="row">
-    <div class="col-6 p-5">
+    <div class="col-6se p-5">
       <h1 class="contact-form p-5"><%= t 'contactanos' %></h1>
       <div>
          <div class="container">
               <%= render 'contacts/new' %>
-
          </div>
       </div>
     </div>
 
-    <div class="col-6">
-      <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656623949/Zinma2.0/DSC06665_1_dlppyp.png") %>
+    <div class="col-6se">
+      <div>
+        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656623949/Zinma2.0/DSC06665_1_dlppyp.png", class:"foto-contact") %>
+      </div>
     </div>
   </div>
 </div>

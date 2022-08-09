@@ -4,8 +4,8 @@
 
 <div class="intro">
   <div class="row">
-    <div class="col-6 p-5">
-      <h1 class="quienes-title p-5"><%= t 'quienes-somos' %></h1>
+    <div class="col p-5">
+      <h1 class="quienes-title "><%= t 'quienes-somos' %></h1>
       <p class="quienes-descr"><%= t 'quienes-descr' %></p>
       <p class="quienes-descr"><%= t 'quienes-descr2' %></p>
       <br>
@@ -15,8 +15,8 @@
       <%= render 'shared/modal' %>
     </div>
 
-    <div class="col-6">
-      <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656731954/Zinma2.0/DSC06465_1_jqxtb7.png", style:"padding-top: 39px; padding-left: 50px;") %>
+    <div class="col">
+      <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656731954/Zinma2.0/DSC06465_1_jqxtb7.png", class:"foto-about") %>
     </div>
   </div>
 </div>
@@ -24,11 +24,11 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-6 mb-5" style="margin-top: 10%;">
-      <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656731954/Zinma2.0/DSC06784_1_h0t6mh.png") %>
+    <div class="col mb-5" style="margin-top: 10%;">
+      <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656731954/Zinma2.0/DSC06784_1_h0t6mh.png", class:"analisis-img") %>
     </div>
 
-    <div class="col-6 p-5" style="margin-top: 10%;">
+    <div class="col  toc p-5" style="">
       <h1 class="title-obj"><%= t 'title-objetivos' %></h1>
       <p class="descr-obj"><%= t 'descr-objetivos' %></p>
       <br>

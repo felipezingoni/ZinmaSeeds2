@@ -103,12 +103,37 @@
 .disactive {
   display: none;
 }
+.burger {
+  display: none;
+}
 
 
 @media screen and (max-width: 768px) {
  .selector {
   display: none;
  }
+ .down-navbar {
+   background-color: whitesmoke;
+   position: absolute;
+   top: 108px;
+   left: 0;
+   height: max-content;
+   width: 100%;
+   text-align: center;
+ }
+ .burger {
+   display: block;
+ }
+ .navbar-collapse {
+    height: 398px;
+ }
 
+ .navbar-nav {
+    font-size: 47px;
+    align-items: flex-start;
+ }
+ .nav-letter{
+   font-size: 26px;
+ }
 
 }
