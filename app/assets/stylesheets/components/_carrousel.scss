@@ -19,7 +19,7 @@
 }
 
 .carousel {
-  z-index: -1;
+  // z-index: 1;
 }
 
  .img-carrousel {
@@ -32,6 +32,7 @@
   height: 90vh;
   width: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .ban-1 {
   color: white;
@@ -76,6 +77,7 @@
 }
 .boton-w:hover {
   background: #F5F5F5;
+  color: rgba(127, 129, 109, 1);
 }
 
 .ban2{
@@ -83,6 +85,7 @@
   height: 90vh;
   width: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .ban3{
@@ -90,6 +93,7 @@
   height: 90vh;
   width: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .slide-up {
@@ -119,9 +123,9 @@
   }
 }
 
-.carousel-item {
-  transition: transform 0.5s ease-out;
-}
+// .carousel-item {
+//   transition: transform .6s ease-in-out;
+// }
 
 // .carousel-indicators {
 //   width: 15px !important;

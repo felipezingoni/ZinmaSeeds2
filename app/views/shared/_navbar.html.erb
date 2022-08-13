@@ -25,13 +25,15 @@
 
       <div class="selector" data-controller="language">
           <div class="selectField" data-action="click->language#toggle">
-              <% if root_path(locale: :en)  %>
+              <% if I18n.locale == :en %>
                   <span ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656442590/Zinma2.0/emojione_flag-for-united-states_magqgf.svg") %></span>
-               <% elsif root_path(locale: :es) %>
+                 <% elsif  I18n.locale == :es %>
+                  <span ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656442838/Zinma2.0/emojione_flag-for-argentina_zapp7v.svg") %></span>
+                <% else %>
                   <span ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656442838/Zinma2.0/emojione_flag-for-argentina_zapp7v.svg") %></span>
               <% end %>
 
-              <p id="selectText" ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1659112985/Zinma2.0/chevron_s2hgiq.svg") %></p>
+              <div id="selectText" ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1660339070/Zinma2.0/chevron_iv5t58.png") %></div>
           </div>
 
           <ul class="list hide" data-language-target="element">
