@@ -279,7 +279,19 @@
 }
 .mapardo {
   overflow-x: hidden;
+  padding-top: 109px;
 }
+
+.intro-mapa {
+  height: 866px;
+  background-color: var(--main-bg-color);
+}
+
+.intro3 {
+  background-color: var(--main-bg-color);
+  height: 626px;
+}
+
 .plantas {
   overflow-x: hidden;
 
@@ -291,6 +303,10 @@
     margin: auto;
     margin-top: 44px;
   }
+    .intro3 {
+      background-color: var(--main-bg-color);
+      height: 385px;
+    }
   .description-zinma {
     text-align: center;
     padding: 25px;
@@ -336,6 +352,7 @@
   .donde-desc {
     font-size: 12px;
     width: 100%;
+    text-align: center;
   }
   .toc {
     display: flex;
@@ -350,11 +367,18 @@
     display: none;
   }
   .boton {
-    font-size: 14px;
+    font-size: 13px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-boton {
+    width: 239px;
   }
 
   .intro {
-    height: 502px;
+    height: 556px;
   }
 
   .svg {
@@ -367,6 +391,7 @@
   }
   .mapardo {
     overflow-x: hidden;
+    padding-top: 0px;
   }
 }
 
@@ -378,6 +403,9 @@
   .ban-2 {
     font-size: 40px;
   }
+    .mapardo {
+      padding-top: 0px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 968px) {
@@ -394,6 +422,7 @@
     }
     .mapardo {
       overflow-x: hidden;
+      padding-top: 101px;
     }
     .burger {
       display: block;
@@ -417,6 +446,9 @@
         .navbar-nav {
           font-size: 47px;
           align-items: flex-start;
+          z-index: 1;
+          background: white;
+          position: relative;
         }
 
         .nav-letter {
@@ -425,9 +457,9 @@
         .intro {
           height: 437px;
         }
-    .carousel {
-      height: 74vh;
-    }
+        .carousel {
+          height: 90vh;
+        }
 }
 
 
@@ -439,4 +471,9 @@
       display: flex;
       justify-content: flex-start;
     }
+}
+@media (min-width: 1500px) and (max-width: 1968px) {
+  .plantas {
+    width: 805px;
+  }
 }

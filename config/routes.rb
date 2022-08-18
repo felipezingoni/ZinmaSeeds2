@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'send/index'
+  get '/404',  to: 'errors#error404'
 
   scope '(:locale)', locale: /#{I18n.available_locales.join("|")}/ do
     get 'products/alfalfa'

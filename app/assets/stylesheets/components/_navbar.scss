@@ -133,6 +133,9 @@
  .navbar-nav {
     font-size: 47px;
     align-items: flex-start;
+    z-index: 1;
+    background: white;
+    position: relative;
  }
  .nav-letter{
    font-size: 26px;

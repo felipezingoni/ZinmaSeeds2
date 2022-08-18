@@ -21,6 +21,7 @@ module Zinma20
     config.i18n.available_locales = [:es, :en]
     config.i18n.default_locale = :es
 
+    config.exceptions_app = self.routes
 
   end
 end

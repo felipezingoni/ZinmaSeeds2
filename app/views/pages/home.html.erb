@@ -19,10 +19,8 @@
     </div>
   </div>
 
-  <div>
-    <%# <%= video_tag "truffle1.mp4", :size => "320x240", :controls => true %>
-  </div>
 </div>
+  <%= render 'shared/video' %>
 
   <%= render 'shared/home-products' %>
 
@@ -30,13 +28,13 @@
 
   <%= render 'shared/ensayo' %>
 
-<div class="intro">
+<div class="intro3">
   <div class="d-flex align-items-center justify-content-between" style="padding-top: 7%;">
     <div class="mx-5 toc">
       <h1 class="donde-title"><%= t 'donde-estamos' %></h1>
       <p class="donde-desc"><%= t 'desc-donde' %></p>
       <div class="mt-5">
-        <%= link_to t('boton2-home'), "#", class:"boton" %>
+        <%= link_to t('boton2-home'), "#", class:"boton btn-boton" %>
       </div>
       <div class="d-flex" style="position: relative;left: 72%;">
         <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1658346362/Zinma2.0/Arrow17_x6uwd0.svg", class:"flechas") %>
@@ -49,7 +47,7 @@
 
 </div>
 
-<div class="intro" style="height: 753px;">
+<div class="intro-mapa">
   <div class="container mapardo">
     <%= render 'shared/map' %>
   </div>

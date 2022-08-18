@@ -1,0 +1,120 @@
+
+#cards-wrapper {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 852px;
+}
+
+.card133 {
+  background-image: url("https://res.cloudinary.com/ddlmgs04n/image/upload/v1660833177/Zinma2.0/Groupsorgo_aymuie.svg");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 395px;
+  }
+
+#cast:hover {
+  position: relative;
+  opacity: 1;
+  transition: all 0.4s ease-in;
+}
+
+#cast {
+  position: absolute;
+  opacity: 0;
+  width: 300px;
+  height: 400px;
+  top: -3px;
+  left: 0;
+}
+
+.card-wow {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 76%;
+  left: 19%;
+}
+
+#casti:hover {
+  display: block;
+}
+
+.hei {
+  height: 400px;
+}
+
+#my_video_1 {
+  position: relative;
+  margin: auto;
+  width: 840px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  max-width: 100%;
+  overflow-y: hidden;
+}
+
+#my_video_1_html5_api {
+  width: 840px;
+}
+
+
+.vjs-default-skin .vjs-big-play-button {
+  font-size: 5em;
+  display: block;
+  z-index: 2;
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  cursor: pointer;
+  opacity: 1;
+  background-color: #b3b3b373;
+  border-radius: 1em;
+  top: 31%;
+  left: 40%;
+  content: url("https://res.cloudinary.com/ddlmgs04n/image/upload/v1660740918/Zinma2.0/Component_3_z6kydj.png");
+}
+
+.vjs-paused {
+  opacity: 0.6;
+ }
+
+.vjs-default-skin .vjs-progress-holder {
+  height: 100%;
+}
+
+.vjs-default-skin .vjs-slider {
+  outline: 0;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  background-color: rgba(239, 239, 239, 90%);
+}
+
+.vjs-play-control {
+  color: red;
+}
+
+.vjs-control-text,
+ .vjs-control-text,
+ .vjs-current-time-display,
+ .vjs-duration-display, .vjs-remaining-time-display, .vjs-time-divider {
+  display: none;
+}
+
+.vjs-default-skin .vjs-progress-holder .vjs-play-progress,
+.vjs-default-skin .vjs-progress-holder .vjs-load-progress {
+  position: absolute;
+  display: block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+}
