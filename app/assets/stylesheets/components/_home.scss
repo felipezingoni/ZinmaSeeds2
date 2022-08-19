@@ -393,6 +393,9 @@
     overflow-x: hidden;
     padding-top: 0px;
   }
+  .menu {
+    margin: 10px;
+  }
 }
 
 @media screen and (max-width: 394px) {
@@ -460,6 +463,9 @@
         .carousel {
           height: 90vh;
         }
+                .menu {
+                  margin: 10px;
+                }
 }
 
 

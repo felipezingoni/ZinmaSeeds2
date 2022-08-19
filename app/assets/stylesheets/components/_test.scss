@@ -8,14 +8,41 @@
 }
 
 .card133 {
-  background-image: url("https://res.cloudinary.com/ddlmgs04n/image/upload/v1660833177/Zinma2.0/Groupsorgo_aymuie.svg");
+  background-image: url("https://res.cloudinary.com/ddlmgs04n/image/upload/v1660930800/Zinma2.0/Alfalfa-card_g7glof.svg");
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 300px;
-  height: 395px;
+  width: 289px;
+  height: 381px;
   }
+.card133sorgo {
+  background-image: url("https://res.cloudinary.com/ddlmgs04n/image/upload/v1660932332/Zinma2.0/sorgo-card_hirvfb.svg");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 289px;
+  height: 381px;
+}
+.card133pasturas {
+  background-image: url("https://res.cloudinary.com/ddlmgs04n/image/upload/v1660932572/Zinma2.0/pasturas-card_knt9c8.svg");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 289px;
+  height: 381px;
+}
+.card133cultivos {
+  background-image: url("https://res.cloudinary.com/ddlmgs04n/image/upload/v1660932898/Zinma2.0/cultivo-card_c5mvwv.svg");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 289px;
+  height: 381px;
+}
 
 #cast:hover {
   position: relative;
@@ -26,10 +53,21 @@
 #cast {
   position: absolute;
   opacity: 0;
-  width: 300px;
+  width: 289px;
   height: 400px;
-  top: -3px;
+  top: 0;
   left: 0;
+}
+.card-wow1 {
+  position: absolute;
+  top: 65%;
+  left: 38%;
+  font-family: 'Trump Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 103.5%;
+  color: #7F816D;
 }
 
 .card-wow {
