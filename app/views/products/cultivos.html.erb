@@ -26,8 +26,8 @@
           <div class="espaciador2"></div>
             <div class="tab-content accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-collapse collapse show" aria-expanded="true" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="RABANITO">
-                <h1 class="font-pro" style="font-size: 35px;">RABANITO</h1>
-                <p class="desc-pro2">Variedad de rabanito forrajero (Rapahanus sativus sp. oleiferus) que produce una gran cantidad de biomasa. Tiene muy buena capacidad de rebrote luego de un corte o pastoreo.</p>
+                <h1 class="font-pro" style="font-size: 35px;"><%= t'rabanito-nom' %></h1>
+                <p class="desc-pro2"><%= t'RABANITO' %></p>
                 <div class="m-5">
                   <%= link_to "#", class:"btn-ficha" do %>
                     <p class="m-0 mx-1"><%= t'ficha' %></p>
@@ -36,8 +36,8 @@
                 </div>
               </div>
               <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="VICIA">
-                <h1 class="font-pro" style="font-size: 35px;">VICIA</h1>
-                <p class="desc-pro2">Cultivar de vicia villosa de ciclo corto (llega a floración 15 días antes que los cultivares locales), seleccionado por su resistencia a frío en las etapas iniciales de su desarrollo.</p>
+                <h1 class="font-pro" style="font-size: 35px;"><%= t'vicia-nom' %></h1>
+                <p class="desc-pro2"><%= t'VICIA' %></p>
                 <div class="m-5">
                   <%= link_to "#", class:"btn-ficha" do %>
                     <p class="m-0 mx-1"><%= t'ficha' %></p>
@@ -46,8 +46,8 @@
                 </div>
               </div>
               <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="AVENANEGRA">
-                <h1 class="font-pro" style="font-size: 35px;">AVENA NEGRA</h1>
-                <p class="desc-pro2">Variedad de Avena negra (Avena strigosa Schreb.) doble propósito, ya que se puede usar tanto para cobertura como para pastoreo. Se destaca por su elevada resistencia a roya.</p>
+                <h1 class="font-pro" style="font-size: 35px;"><%= t'avena-nom' %></h1>
+                <p class="desc-pro2"><%= t'AVENA-NEGRA' %></p>
                 <div class="m-5">
                   <%= link_to "#", class:"btn-ficha" do %>
                     <p class="m-0 mx-1"><%= t'ficha' %></p>
@@ -67,14 +67,14 @@
     <div class="d-flex justify-content-center flex-column align-items-center p-5 products-zinmas" >
       <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1657911981/Zinma2.0/sorgo_1_qpsrr0.png", class:"position-absolute opacity-50") %>
       <h1 class="font-pro m-4"><%= t'Cultivos' %></h1>
-      <p class="desc-pro m-4">Zinma Seeds tiene cultivos de cobertura para mantener la rentabilidad del campo, incluso entre las plantaciones de cultivos comerciales. Nuestra selección de semillas de cultivos de cobertura puede ayudar a suprimir los nematodos, mejorar la labranza del suelo y dejar un valioso nitrógeno en el suelo para el cultivo posterior.</p>
+      <p class="desc-pro m-4"><%= t'description-cultivos' %></p>
     </div>
       <div class="d-flex justify-content-center" style="position: relative;">
-        <p class="pro-primer">Productos de primera calidad</p>
+        <p class="pro-primer"><%= t'primera-calida' %></p>
         <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1657911134/Zinma2.0/Arrow_16_futvng.svg", class:"flechas-pro") %>
         <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1655855223/Zinma2.0/cultivo-de-servicio1_uknlor.png",  class:"bolsa") %>
         <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1657911030/Zinma2.0/Arrow_17_udmr0w.svg", class:"flechas-pro") %>
-        <p class="pro-rend">Rendimiento comprobado</p>
+        <p class="pro-rend"><%= t'rendimiento-com' %></p>
       </div>
   </div>
 </div>

@@ -9,7 +9,7 @@
           <div id="cast">
                 <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1660930806/Zinma2.0/alfalfa-cardhover_qt7xe2.svg", id:"" ) %>
                 <div class="">
-                  <h2 class="card-wow1">Alfalfa</h2>
+                  <h2 class="card-wow1"><%= t ('Alfalfa') %></h2>
                   <div class="d-flex card-wow ">
                     <p  class="boton2 mx-3 m-2"><%= t 'conoce-pro' %></p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="18" viewBox="0 0 48 18" fill="none">
@@ -30,7 +30,7 @@
             <div id="cast">
                   <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1660932334/Zinma2.0/sorgo-cardhover_oxs8bn.svg", id:"" ) %>
                   <div class="">
-                    <h2 class="card-wow1">Sorgo</h2>
+                    <h2 class="card-wow1"><%= t('Sorgo') %></h2>
                     <div class="d-flex card-wow ">
                       <p  class="boton2 mx-3 m-2"><%= t 'conoce-pro' %></p>
                       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="18" viewBox="0 0 48 18" fill="none">
@@ -53,7 +53,7 @@
             <div id="cast">
                   <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1660932571/Zinma2.0/pasturas-cardhover_mbtgto.svg", id:"" ) %>
                   <div class="">
-                    <h2 class="card-wow1">Pasturas</h2>
+                    <h2 class="card-wow1"><%= t('Pasturas') %></h2>
                     <div class="d-flex card-wow ">
                       <p  class="boton2 mx-3 m-2"><%= t 'conoce-pro' %></p>
                       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="18" viewBox="0 0 48 18" fill="none">
@@ -74,7 +74,7 @@
             <div id="cast">
                   <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1660932894/Zinma2.0/cultivo-cardhover_ptbmjf.svg", id:"" ) %>
                   <div class="">
-                    <h2 class="card-wow1" style="left: 23%;font-size: 29px;">Cultivos de servicios</h2>
+                    <h2 class="card-wow1" style="left: 23%;font-size: 29px;"><%= t('Cultivos') %></h2>
                     <div class="d-flex card-wow ">
                       <p  class="boton2 mx-3 m-2"><%= t 'conoce-pro' %></p>
                       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="18" viewBox="0 0 48 18" fill="none">
@@ -94,10 +94,6 @@
       <p class="boton2 btn-mx mx-3"><span><%= t 'conoce' %></span></p>
     <% end %>
 
-    <%# <button class="boton2 mx-3"><span><%= t 'conoce' %></span></button>
-    <%# <%= link_to t('conoce'), "#", class:"boton2 mx-3" %>
-    <%# <svg xmlns="http://www.w3.org/2000/svg" width="48" height="18" viewBox="0 0 48 18" fill="none">
-      <path d="M0 9.99997H43.586L37.293 16.293L38.707 17.707L47.414 8.99997L38.707 0.292969L37.293 1.70697L43.586 7.99997H0V9.99997Z" fill="#A58F73"/>
-    </svg> %>
+
   </div>
 </div>
