@@ -76,8 +76,13 @@
   gap: 12px;
 }
 .boton-w:hover {
-  background: #F5F5F5;
+  background: #dcdbdb;
   color: rgba(127, 129, 109, 1);
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out
 }
 
 .ban2{
