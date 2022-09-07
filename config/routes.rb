@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  constraints(host: 'zinmaseeds-app.herokuapp.com') do
+    match '*path', to: redirect { |_p, request| "https://zinmaseeds.com#{request.original_fullpath}" }, via: :all, status: :moved_permanently
+  end
   get 'send/index'
   get '/404',  to: 'errors#error404'
 

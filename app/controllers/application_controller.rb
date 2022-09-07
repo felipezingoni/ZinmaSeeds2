@@ -1,7 +1,14 @@
 class ApplicationController < ActionController::Base
   before_action :set_locale
+  before_action :verify_domain, if: -> { Rails.env.production? }
+
 
   private
+  def verify_domain
+    return unless request.host == "zinmaseeds.com"
+    redirect_to "https://zinmaseeds.com#{request.original_fullpath}",
+        status: :moved_permanently
+  end
 
   def default_url_options
       {locale: I18n.locale}
