@@ -23,5 +23,6 @@ module Zinma20
 
     config.exceptions_app = self.routes
 
+
   end
 end
