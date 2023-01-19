@@ -17,5 +17,8 @@
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^4.11.1"
+  },
+  "scripts": {
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby build"
   }
 }
