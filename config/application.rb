@@ -11,6 +11,9 @@ module Zinma20
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
     config.assets.initialize_on_precompile = false
+    config.public_file_server.headers = {
+      'Cache-Control' => 'public, max-age=31536000'
+    }
 
     # Configuration for the application, engines, and railties goes here.
     #
