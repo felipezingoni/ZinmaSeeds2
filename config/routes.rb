@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     match '*path', to: redirect { |_p, request| "https://zinmaseeds.com#{request.original_fullpath}" }, via: :all, status: :moved_permanently
   end
   get 'send/index'
-  get '/404',  to: 'errors#error404'
+  get '/404', to: 'errors#error404'
 
   scope '(:locale)', locale: /#{I18n.available_locales.join("|")}/ do
     get 'products/alfalfa'
