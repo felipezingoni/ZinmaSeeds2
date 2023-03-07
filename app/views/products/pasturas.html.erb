@@ -21,7 +21,8 @@
           <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#FESTUCA">FESTUCA</button></li>
           <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#CEBADILLA">CEBADILLA</button></li>
           <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#AGROPIRO">AGROPIRO</button></li>
-          <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#RYEGRASS">RYE GRASS</button></li>
+          <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#RYEGRASS">RYE GRASS Talero</button></li>
+          <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#RYEGRASS-ala">RYE GRASS Alazán</button></li>
       </div>
       </div>
       <div class="col-5s d-flex">
@@ -58,10 +59,20 @@
                 </div>
               </div>
               <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="RYEGRASS">
-                <h1 class="font-pro" style="font-size: 35px;">RYE GRASS</h1>
+                <h1 class="font-pro" style="font-size: 35px;">RYE GRASS Talero</h1>
                 <p class="desc-pro2"></p>
                 <div class="m-5">
-                  <%= link_to "#", target:"_blank", class:"btn-ficha" do %>
+                  <%= link_to "https://storage.googleapis.com/zinmaseeds/Pasturas/Pasturas_Raigra%CC%81s%20TALERO.pdf", target:"_blank", class:"btn-ficha" do %>
+                    <p class="m-0 mx-1"><%= t'ficha' %></p>
+                    <p class="m-0 mx-1"><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1658257615/Zinma2.0/Vector-1_w6xmqf.svg") %></p>
+                  <% end %>
+                </div>
+              </div>
+              <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="RYEGRASS-ala">
+                <h1 class="font-pro" style="font-size: 35px;">RYE GRASS Alazán</h1>
+                <p class="desc-pro2"></p>
+                <div class="m-5">
+                  <%= link_to "https://storage.googleapis.com/zinmaseeds/Pasturas/Pasturas_Raigra%CC%81sALAZA%CC%81N.pdf", target:"_blank", class:"btn-ficha" do %>
                     <p class="m-0 mx-1"><%= t'ficha' %></p>
                     <p class="m-0 mx-1"><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1658257615/Zinma2.0/Vector-1_w6xmqf.svg") %></p>
                   <% end %>
