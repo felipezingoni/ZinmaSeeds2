@@ -1,15 +1,27 @@
 import { Controller } from 'stimulus'
+import { gsap } from 'gsap';
 
 export default class extends Controller {
-  static targets = ['loading']
+  connect() {
+    console.log('Hello from loader_controller.js');
+    this.fadeOutLoader();
+  }
 
-  load(e) {
-    const pepi = this.loadingTarget.classList.toggle("loader2")
-    const pipi = this.loadingTarget.classList.remove("loaders")
+  fadeOutLoader() {
+    const loader = this.element;
 
-
-    console.log(pepi)
-
-
+    gsap.to(loader, {
+      opacity: 0,
+      display: "none",
+      duration: 1.5,
+      delay: 3.5,
+      onComplete: () => {
+        loader.remove();
+        document.documentElement.style.overflow = "auto"; // Habilitar el desplazamiento
+      },
+      onStart: () => {
+        document.documentElement.style.overflow = "hidden"; // Deshabilitar el desplazamiento
+      },
+    });
   }
 }
