@@ -25,7 +25,7 @@
             <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#SORGO3591">SORGO Granifero Z 3591 GR</button></li>
             <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#SORGO1497">SORGO F 1497 FS</button></li>
             <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#SORGO750">SORGO F 750 Plus</button></li>
-
+            <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#FORTINFORAGE">SORGHUM FORTIN FORAGE</button></li>
         </div>
       </div>
       <div class="col-5s d-flex">
@@ -55,9 +55,16 @@
                 <h1 class="font-pro" style="font-size: 35px;">SORGO Z 1220 BMR</h1>
                 <p class="desc-pro2"><%= t'SORGOZ1220' %></p>
                 <div class="m-5">
-                  <%= link_to "https://storage.googleapis.com/zinmaseeds/Sorgo/Sorgo_FORRAJERO_Z%201220%20BMR_c.pdf", target:"_blank",class:"btn-ficha" do %>
-                    <p class="m-0 mx-1"><%= t'ficha' %></p>
-                    <p class="m-0 mx-1"><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1658257615/Zinma2.0/Vector-1_w6xmqf.svg") %></p>
+                  <% if I18n.locale.to_s == 'es' %>
+                    <%= link_to "https://storage.googleapis.com/zinmaseeds/Sorgo/Sorgo_FORRAJERO_Z%201220%20BMR_c.pdf", target:"_blank",class:"btn-ficha" do %>
+                      <p class="m-0 mx-1"><%= t'ficha' %></p>
+                      <p class="m-0 mx-1"><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1658257615/Zinma2.0/Vector-1_w6xmqf.svg") %></p>
+                    <% end %>
+                  <% else %>
+                    <%= link_to "https://storage.googleapis.com/zinmaseeds/Sorgo/Sorgo_Sorghum%20type_Z%201220%20BMR.pdf", target:"_blank", class:"btn-ficha" do %>
+                      <p class="m-0 mx-1"><%= t('ficha') %></p>
+                      <p class="m-0 mx-1"><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1658257615/Zinma2.0/Vector-1_w6xmqf.svg") %></p>
+                    <% end %>
                   <% end %>
                 </div>
               </div>
@@ -100,8 +107,17 @@
                       <p class="m-0 mx-1"><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1658257615/Zinma2.0/Vector-1_w6xmqf.svg") %></p>
                     <% end %>
                   </div>
-               </div>
-
+                </div>
+                <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="FORTINFORAGE">
+                  <h1 class="font-pro" style="font-size: 35px;">SORGHUM FORTIN FORAGE 🇺🇸</h1>
+                  <p class="desc-pro2">SORGHUM Fortin Forage</p>
+                  <div class="m-5">
+                    <%= link_to "https://storage.googleapis.com/zinmaseeds/Sorgo/Sorgo_Sorghum%20type_v2.pdf", target:"_blank",class:"btn-ficha" do %>
+                      <p class="m-0 mx-1"><%= t'ficha' %></p>
+                      <p class="m-0 mx-1"><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1658257615/Zinma2.0/Vector-1_w6xmqf.svg") %></p>
+                    <% end %>
+                  </div>
+                </div>
 
 
             </div>
