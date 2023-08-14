@@ -153,3 +153,16 @@
  }
 
 }
+
+.swiper-pagination-bullet-active {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50% !important;
+}
+
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50% !important;
+  background-color: #fff !important;
+}

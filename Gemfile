@@ -28,6 +28,8 @@ gem 'bootstrap', '~> 5.1', '>= 5.1.3'
 gem 'rails-i18n'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'sendgrid-ruby', '~> 5.0'
+gem 'swiper-rails'
+
 # gem 'actionmailer', '~> 7.0', '>= 7.0.3.1'
 
 
