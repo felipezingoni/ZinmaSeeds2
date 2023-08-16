@@ -21,6 +21,15 @@
                 <li class="nav-item px-4">
                   <%= link_to t('contacto'), pages_contact_path, class:"nav-letter nav2-link" %>
                 </li>
+                <li class="d-flex d-lg-none px-4">
+                  <%= link_to root_path(locale: :es), class:"nav-letter" do %>
+                    <p class="m-0">es</p>
+                  <% end %>
+                  <p class="nav-letter m-0"> / </p>
+                  <%= link_to root_path(locale: :en), class:"nav-letter" do %>
+                    <p class="m-0">en</p>
+                  <% end %>
+                </li>
               </ul>
         </div>
       </div>
