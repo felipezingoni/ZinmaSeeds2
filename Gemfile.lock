@@ -120,6 +120,8 @@ GEM
     msgpack (1.6.0)
     mustermann (2.0.2)
       ruby2_keywords (~> 0.0.1)
+    net-http (0.3.2)
+      uri
     net-imap (0.3.4)
       date
       net-protocol
@@ -238,6 +240,7 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
+    uri (0.12.2)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -275,6 +278,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   listen (~> 3.3)
   mail_form (~> 1.5, >= 1.5.1)
+  net-http
   pg
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)

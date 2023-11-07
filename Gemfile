@@ -24,6 +24,7 @@ gem 'rails-i18n'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'sendgrid-ruby', '~> 5.0'
 gem 'swiper-rails'
+gem "net-http"
 
 
 
@@ -61,7 +62,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "dockerfile-rails", ">= 1.5", :group => :development
+gem "dockerfile-rails", ">= 1.5"
 
 gem "sentry-ruby", "~> 5.10"
 
