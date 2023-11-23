@@ -2,7 +2,7 @@
   <div class="container d-flex justify-content-between align-items-center flex-md-space-between ">
       <div>
       <%= link_to root_path do%>
-        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1674590356/Zinma2.0/Zinma_full_color_ymgqie_1_1_xgboiv.webp", style:"width:80px;height:80px") %>
+        <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/f_auto/v1674590356/Zinma2.0/Zinma_full_color_ymgqie_1_1_xgboiv.webp", style:"width:80px;height:80px") %>
       <% end %>
       </div>
 
@@ -37,25 +37,25 @@
       <div class="selector" data-controller="language">
           <div class="selectField" data-action="click->language#toggle">
               <% if I18n.locale == :en %>
-                  <span ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656442590/Zinma2.0/emojione_flag-for-united-states_magqgf.svg") %></span>
+                  <span ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/f_auto/v1656442590/Zinma2.0/emojione_flag-for-united-states_magqgf.svg") %></span>
                  <% elsif  I18n.locale == :es %>
-                  <span ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656442838/Zinma2.0/emojione_flag-for-argentina_zapp7v.svg") %></span>
+                  <span ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/f_auto/v1656442838/Zinma2.0/emojione_flag-for-argentina_zapp7v.svg") %></span>
                 <% else %>
-                  <span ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656442838/Zinma2.0/emojione_flag-for-argentina_zapp7v.svg") %></span>
+                  <span ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/f_auto/v1656442838/Zinma2.0/emojione_flag-for-argentina_zapp7v.svg") %></span>
               <% end %>
 
-              <div id="selectText" ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1660339070/Zinma2.0/chevron_iv5t58.png") %></div>
+              <div id="selectText" ><%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/f_auto/v1660339070/Zinma2.0/chevron_iv5t58.png") %></div>
           </div>
 
           <ul class="list hide" data-language-target="element">
             <li class="options show active" >
               <%= link_to root_path(locale: :es) do %>
-                <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656442838/Zinma2.0/emojione_flag-for-argentina_zapp7v.svg") %>
+                <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/f_auto/v1656442838/Zinma2.0/emojione_flag-for-argentina_zapp7v.svg") %>
               <% end %>
             </li>
             <li class="options" >
               <%= link_to root_path(locale: :en) do %>
-                <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/v1656442590/Zinma2.0/emojione_flag-for-united-states_magqgf.svg") %>
+                <%= image_tag("https://res.cloudinary.com/ddlmgs04n/image/upload/f_auto/v1656442590/Zinma2.0/emojione_flag-for-united-states_magqgf.svg") %>
               <% end %>
             </li>
           </ul>
