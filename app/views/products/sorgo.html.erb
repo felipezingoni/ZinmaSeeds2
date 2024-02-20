@@ -26,6 +26,7 @@
             <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#SORGO1497">SORGO F 1497 FS</button></li>
             <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#SORGO750">SORGO F 750 Plus</button></li>
             <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#FORTINFORAGE">SORGHUM FORTIN FORAGE</button></li>
+            <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#SORGOF1483">SORGO F 1483</button></li>
         </div>
       </div>
       <div class="col-5s d-flex">
@@ -118,7 +119,16 @@
                     <% end %>
                   </div>
                 </div>
-
+                <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="SORGOF1483">
+                  <h1 class="font-pro" style="font-size: 35px;">SORGO F 1483</h1>
+                  <p class="desc-pro2"><%= t'SORGOF1483' %></p>
+                  <div class="m-5">
+                    <%= link_to "https://storage.googleapis.com/sorgo/Sorgo%20compri/Sorgo_F%201483.pdf", target:"_blank",class:"btn-ficha" do %>
+                      <p class="m-0 mx-1"><%= t'ficha' %></p>
+                      <p class="m-0 mx-1"><%= image_tag("https://storage.googleapis.com/zinmaimages/Vector-1_w6xmqf%20(1).svg") %></p>
+                    <% end %>
+                  </div>
+                </div>
 
             </div>
         </div>

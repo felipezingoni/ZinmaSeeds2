@@ -31,6 +31,7 @@ en:
   ALPHATEC821: "A non-dormant synthetic alfalfa variety (FD group 8) selected for its adaptability to various highly productive environments."
   MAGNA995: "Variety belonging to Fall Dormancy group 9, excellent at producing high forage yields."
   ALPHATEC921: "Variety of synthetic alfalfa with a Fall Dormancy rating of 9."
+  ALPHATEC923: "Synthetic alfalfa variety with no dormancy from group 9."
   description-alfalfa: "Zinma Seeds offers multiple varieties of alfalfa to suit your needs. We have varieties in Fall Dormancy group 2 – 9 to adapt to virtually any environment. Our varieties have been yield tested for at least 3 years, plus they have been selected for enhanced persistence."
 
 
@@ -42,12 +43,19 @@ en:
   SORGO3591: "Grain sorghum of intermediate-short cycle. Excellent yield potential in good environments."
   SORGO750: "Plant with great regrowth capacity, ideal for intensive rotational grazing."
   SORGO1497: "Photosensitive hybrid with high growth and high biomass production. Ideal for deferred grazing and bioenergy generation."
+  SORGOF1483: "Tall and high-yielding forage sorghum with high sugar content."
   description-sorgo: "Zinma Seeds offers forage sorghum hybrids capable of producing large quantities of feed for your operation. Our hybrids include dual-purpose grain/silage types as well as BMR for improved forage quality."
 
   Pasturas: "Pastures"
   FESTUCA: "Variety of continental-type fescue. It is a material of good initial vigor. It has a high density of tillers. Green leaves, medium to wide. Sport semi-proscribed. Its high leaf palatability stands out."
   CEBADILLA: "It presents great initial vigor, erect bearing and greater persistence than Martín Fierro. Selected from high vigor family genotypes spring-summer."
   AGROPIRO: "Good seedling vigor, outstanding winter growth, and high forage production. Excellent early spring production. Semi-erect plant growth."
+  SAINFOIN: "Perennial leguminous forage. Does not cause bloat in ruminants. Excellent palatability and nutritional value. Compatible with alfalfa and grasses. Tolerant to drought, frost, and low temperatures."
+  TRITICALECUME: "Triticale cultivar, ideal for use as early forage resource."
+  TRITICALEYAVU: "Triticale cultivar ideal for dual-purpose use: forage or grain. It has an intermediate to long cycle and adapts to subhumid to semiarid productive zones."
+  MADONNA: "Tetraploid Ryegrass. With excellent appearance, highly coveted by livestock, and vigorous initial growth."
+  FLYINGA: "Annual Ryegrass, developed and designed for livestock systems. It yields high-palatability forage, improved resistance to crown rust, and good cold tolerance."
+  PUCARÁ: "Festulolium with excellent persistence under water stress and high summer temperatures."
   description-pasturas: "Zinma Seeds offers pasture seeds for almost every situation. Our pastures are the most natural feed for livestock. High quality pasture is beneficial to cattle both nutritionally and economically. A pasture with the right selection of species can provide a cow with all the energy needed for efficient conversion to meat and milk day in and day out."
 
   Cultivos: "Cover Crops"
