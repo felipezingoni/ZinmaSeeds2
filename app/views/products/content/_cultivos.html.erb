@@ -1,0 +1,78 @@
+<div>
+  <div class="container">
+    <div class="row container">
+        <div class="col-7">
+        <div class="grid-card list-inline">
+            <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#RABANITO">RABANITO</button></li>
+            <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#VICIA">VICIA</button></li>
+            <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#AVENANEGRA">AVENA NEGRA</button></li>
+            <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#CENTENO">CENTENO</button></li>
+        </div>
+        </div>
+        <div class="col-5s d-flex">
+            <div class="espaciador2"></div>
+              <div class="tab-content accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-collapse collapse show" aria-expanded="true" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="RABANITO">
+                  <h1 class="font-pro" style="font-size: 35px;"><%= t'rabanito-nom' %></h1>
+                  <p class="desc-pro2"><%= t'RABANITO' %></p>
+                  <div class="m-5">
+                    <%= link_to "https://storage.googleapis.com/cultivos/CS%20compri/Cultivo%20de%20Servicio_Rabanito%20Forrajero%20BOKITO_c.pdf", target:"_blank",class:"btn-ficha" do %>
+                      <p class="m-0 mx-1"><%= t'ficha' %></p>
+                      <p class="m-0 mx-1"><%= image_tag("https://storage.googleapis.com/zinmaimages/Vector-1_w6xmqf.svg") %></p>
+                    <% end %>
+                  </div>
+                </div>
+                <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="VICIA">
+                  <h1 class="font-pro" style="font-size: 35px;"><%= t'vicia-nom' %></h1>
+                  <p class="desc-pro2"><%= t'VICIA' %></p>
+                  <div class="m-5">
+                    <%= link_to "https://storage.googleapis.com/cultivos/CS%20compri/Cultivo%20de%20Servicio_Vicia%20Villosa%20MASSA_c.pdf", target:"_blank",class:"btn-ficha" do %>
+                      <p class="m-0 mx-1"><%= t'ficha' %></p>
+                      <p class="m-0 mx-1"><%= image_tag("https://storage.googleapis.com/zinmaimages/Vector-1_w6xmqf.svg") %></p>
+                    <% end %>
+                  </div>
+                </div>
+                <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="AVENANEGRA">
+                  <h1 class="font-pro" style="font-size: 35px;"><%= t'avena-nom' %></h1>
+                  <p class="desc-pro2"><%= t'AVENA-NEGRA' %></p>
+                  <div class="m-5">
+                    <%= link_to "https://storage.googleapis.com/cultivos/CS%20compri/Cultivo%20de%20Servicio_Avena%20Negra%20ITACUA%CC%81_c.pdf", target:"_blank",class:"btn-ficha" do %>
+                      <p class="m-0 mx-1"><%= t'ficha' %></p>
+                      <p class="m-0 mx-1"><%= image_tag("https://storage.googleapis.com/zinmaimages/Vector-1_w6xmqf.svg") %></p>
+                    <% end %>
+                  </div>
+                </div>
+                <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="CENTENO">
+                  <h1 class="font-pro" style="font-size: 35px;"><%= t'centeno-nom' %></h1>
+                  <p class="desc-pro2"><%= t'CENTENO' %></p>
+                  <div class="m-5">
+                    <%= link_to "https://storage.googleapis.com/cultivos/CS%20compri/Cultivo%20de%20Servicio_Centeno%20Don%20Ewald%20INTA_c.pdf", target:"_blank",class:"btn-ficha" do %>
+                      <p class="m-0 mx-1"><%= t'ficha' %></p>
+                      <p class="m-0 mx-1"><%= image_tag("https://storage.googleapis.com/zinmaimages/Vector-1_w6xmqf.svg") %></p>
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+  </div>
+
+
+
+  <div class="intro mt-5" style="height: 696px;">
+    <div class="container">
+      <div class="d-flex justify-content-center flex-column align-items-center p-5 products-zinmas" >
+        <%= image_tag("https://storage.googleapis.com/zinmaimages/sorgo_1_qpsrr0.png", class:"position-absolute opacity-50") %>
+        <h1 class="font-pro m-4"><%= t'Cultivos' %></h1>
+        <p class="desc-pro m-4"><%= t'description-cultivos' %></p>
+      </div>
+        <div class="d-flex justify-content-center" style="position: relative;">
+          <p class="pro-primer"><%= t'primera-calida' %></p>
+          <%= image_tag("https://storage.googleapis.com/zinmaimages/Arrow_16_futvng.svg", class:"flechas-pro", style:"rotate: 8deg;") %>
+          <%= image_tag("https://storage.googleapis.com/zinmaimages/Cultivos_web.png",  class:"bolsa") %>
+          <%= image_tag("https://storage.googleapis.com/zinmaimages/Arrow_17_udmr0w.svg", class:"flechas-pro", style:"rotate: 353deg;") %>
+          <p class="pro-rend"><%= t'rendimiento-com' %></p>
+        </div>
+    </div>
+  </div>
+</div>

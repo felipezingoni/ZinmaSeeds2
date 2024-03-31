@@ -6,10 +6,8 @@ Rails.application.routes.draw do
   get '/404', to: 'errors#error404'
 
   scope '(:locale)', locale: /#{I18n.available_locales.join("|")}/ do
-    get 'products/alfalfa'
-    get 'products/sorgo'
-    get 'products/pasturas'
-    get 'products/cultivos'
+    get 'products/index', to: 'products#index'
+
     get 'pages/aboutus'
     get 'pages/contact'
     get 'contacts/message'

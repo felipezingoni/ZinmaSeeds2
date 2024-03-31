@@ -13,7 +13,7 @@ export default class extends Controller {
     gsap.to(loader, {
       opacity: 0,
       display: "none",
-      duration: 1.5,
+      duration: 1,
       delay: 3.5,
       onComplete: () => {
         loader.remove();

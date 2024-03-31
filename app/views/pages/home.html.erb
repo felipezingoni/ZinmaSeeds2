@@ -1,20 +1,21 @@
 <%= render 'shared/carrousel2' %>
-<div class="intro">
-  <div class="container">
-      <div class="row">
-      <div class="col-12 col-md-12">
-          <h1 class="title-zinma">ZINMA SEEDS</h1>
-          <div class="col-sm-12 col-lg-5 " data-aos="fade-up">
-            <p class="description-zinma" ><%= t 'description' %></p>
+<% cache "unique_name_for_this_fragment_#{I18n.locale}" do %>
+  <div class="intro">
+    <div class="container">
+        <div class="row">
+        <div class="col-12 col-md-12">
+            <h1 class="title-zinma">ZINMA SEEDS</h1>
+            <div class="col-sm-12 col-lg-5 " data-aos="fade-up">
+              <p class="description-zinma" ><%= t 'description' %></p>
+            </div>
+            <div class="boton-div">
+              <%= link_to t('boton'), pages_contact_path, class:"boton" %>
+            </div>
           </div>
-          <div class="boton-div">
-            <%= link_to t('boton'), pages_contact_path, class:"boton" %>
-          </div>
-        </div>
+      </div>
     </div>
   </div>
-
-</div>
+<% end %>
   <div data-controller="loader">
     <div class="loaders" >
       <div class="loader-tadpole ">
@@ -22,15 +23,9 @@
       </div>
     </div>
   </div>
-
   <%= render 'shared/video' %>
-
   <%= render 'shared/home-products' %>
-
-
-
   <%= render 'shared/ensayo' %>
-
 <div class="intro3">
   <div class="d-flex align-items-center justify-content-between" style="padding-top: 7%;">
     <div class="mx-5 toc">
@@ -45,11 +40,9 @@
         <p class="pro-primer m-4" data-aos="fade-up"
         data-aos-duration="3000"><%= t('donde-frase') %></p>
     </div>
-    <%= image_tag("https://storage.googleapis.com/zinmaimages/DJI_0863_1_qymoix_iyvndr.webp", class:"plantas") %>
+    <%= image_tag("https://storage.googleapis.com/zinmaimages/DJI_0863_1_qymoix_iyvndr.webp", class:"plantas", loading:"lazy") %>
   </div>
-
 </div>
-
 <div class="intro-mapa">
   <div class="container mapardo">
     <%= render 'shared/map' %>

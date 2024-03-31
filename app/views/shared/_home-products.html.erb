@@ -1,7 +1,6 @@
 <div>
   <h1 class="title-products mb-5"><%= t 'nuestros-productos' %></h1>
   <div class="scroll">
-
     <div class="menu">
       <div>
         <a href="/products/alfalfa" >
@@ -22,7 +21,6 @@
         </a>
       </div>
     </div>
-
     <div class="menu">
       <div>
         <a href="/products/sorgo" >
@@ -43,9 +41,6 @@
         </a>
       </div>
     </div>
-
-
-
     <div class="menu">
       <div>
         <a href="/products/pasturas" >
@@ -66,7 +61,6 @@
         </a>
       </div>
     </div>
-
     <div class="menu">
       <div>
         <a href="/products/cultivos" >
@@ -87,13 +81,10 @@
         </a>
       </div>
     </div>
-
   </div>
   <div class="d-flex justify-content-center align-items-center mt-5" style="margin-bottom: 90px;">
-    <%= link_to products_alfalfa_path do %>
+    <%= link_to products_index_path, remote: true do %>
       <p class="boton2 btn-mx mx-3"><span><%= t 'conoce' %></span></p>
     <% end %>
-
-
   </div>
 </div>

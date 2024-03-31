@@ -1,0 +1,154 @@
+<div>
+  <div class="container">
+      <div class="row container">
+          <div class="col-7">
+          <div class="grid-card list-inline">
+              <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#FESTUCA">FESTUCA</button></li>
+              <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#CEBADILLA">CEBADILLA</button></li>
+              <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#AGROPIRO">AGROPIRO</button></li>
+              <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#RYEGRASS">RYE GRASS Talero</button></li>
+              <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#RYEGRASS-ala">RYE GRASS Alazán</button></li>
+              <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#SAINFOIN">SAINFOIN</button></li>
+              <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#TRITICALECUME">TRITICALE Cumé-UNRC</button></li>
+              <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#TRITICALEYAVU">TRITICALE Yavú-UNRC</button></li>
+              <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#MADONNA">MADONNA</button></li>
+              <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#FLYINGA">FLYING A</button></li>
+              <li><button class="card-type" data-bs-toggle="collapse" data-bs-target="#PUCARÁ">Festulolium PUCARÁ</button></li>
+          </div>
+          </div>
+          <div class="col-5s d-flex">
+              <div class="espaciador2"></div>
+                <div class="tab-content accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-collapse collapse show" aria-expanded="true" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="FESTUCA">
+                    <h1 class="font-pro" style="font-size: 35px;">FESTUCA</h1>
+                    <p class="desc-pro2"><%= t'FESTUCA' %></p>
+                    <div class="m-5">
+                      <%= link_to "https://storage.googleapis.com/pasturas/Pasturas_Festuca%20BALERO%CC%81N_c.pdf", target:"_blank", class:"btn-ficha" do %>
+                        <p class="m-0 mx-1"><%= t'ficha' %></p>
+                        <p class="m-0 mx-1"><%= image_tag("https://storage.googleapis.com/zinmaimages/Vector-1_w6xmqf.svg") %></p>
+                      <% end %>
+                    </div>
+                  </div>
+                  <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="CEBADILLA">
+                    <h1 class="font-pro" style="font-size: 35px;">CEBADILLA</h1>
+                    <p class="desc-pro2"><%= t'CEBADILLA' %></p>
+                    <div class="m-5">
+                      <%= link_to "https://storage.googleapis.com/pasturas/Pasturas_Cebadilla%20Criolla%20TABA_c.pdf", target:"_blank", class:"btn-ficha" do %>
+                        <p class="m-0 mx-1"><%= t'ficha' %></p>
+                        <p class="m-0 mx-1"><%= image_tag("https://storage.googleapis.com/zinmaimages/Vector-1_w6xmqf.svg") %></p>
+                      <% end %>
+                    </div>
+                  </div>
+                  <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="AGROPIRO">
+                    <h1 class="font-pro" style="font-size: 35px;">AGROPIRO</h1>
+                    <p class="desc-pro2"><%= t'AGROPIRO' %></p>
+                    <div class="m-5">
+                      <%= link_to "https://storage.googleapis.com/pasturas/Pasturas_Agropiro%20HE%CC%81RCULES_c.pdf", target:"_blank", class:"btn-ficha" do %>
+                        <p class="m-0 mx-1"><%= t'ficha' %></p>
+                        <p class="m-0 mx-1"><%= image_tag("https://storage.googleapis.com/zinmaimages/Vector-1_w6xmqf.svg") %></p>
+                      <% end %>
+                    </div>
+                  </div>
+                  <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="RYEGRASS">
+                    <h1 class="font-pro" style="font-size: 35px;">RYE GRASS Talero</h1>
+                    <p class="desc-pro2"></p>
+                    <div class="m-5">
+                      <%= link_to "https://storage.googleapis.com/pasturas/Pasturas_Raigra%CC%81s%20TALERO.pdf", target:"_blank", class:"btn-ficha" do %>
+                        <p class="m-0 mx-1"><%= t'ficha' %></p>
+                        <p class="m-0 mx-1"><%= image_tag("https://storage.googleapis.com/zinmaimages/Vector-1_w6xmqf.svg") %></p>
+                      <% end %>
+                    </div>
+                  </div>
+                  <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="RYEGRASS-ala">
+                    <h1 class="font-pro" style="font-size: 35px;">RYE GRASS Alazán</h1>
+                    <p class="desc-pro2"></p>
+                    <div class="m-5">
+                      <%= link_to "https://storage.googleapis.com/pasturas/Pasturas_Raigra%CC%81sALAZA%CC%81N.pdf", target:"_blank", class:"btn-ficha" do %>
+                        <p class="m-0 mx-1"><%= t'ficha' %></p>
+                        <p class="m-0 mx-1"><%= image_tag("https://storage.googleapis.com/zinmaimages/Vector-1_w6xmqf.svg") %></p>
+                      <% end %>
+                    </div>
+                  </div>
+                  <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="SAINFOIN">
+                    <h1 class="font-pro" style="font-size: 35px;">SAINFOIN</h1>
+                    <p class="desc-pro2"><%= t'SAINFOIN' %></p>
+                    <div class="m-5">
+                      <%= link_to "https://storage.googleapis.com/pasturas/Pasturas_SAINFOIN.pdf", target:"_blank", class:"btn-ficha" do %>
+                        <p class="m-0 mx-1"><%= t'ficha' %></p>
+                        <p class="m-0 mx-1"><%= image_tag("https://storage.googleapis.com/zinmaimages/Vector-1_w6xmqf.svg") %></p>
+                      <% end %>
+                    </div>
+                  </div>
+                  <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="TRITICALECUME">
+                    <h1 class="font-pro" style="font-size: 35px;">Triticale Yavú-UNRC</h1>
+                    <p class="desc-pro2"><%= t'TRITICALECUME' %></p>
+                    <div class="m-5">
+                      <%= link_to "https://storage.googleapis.com/pasturas/Pasturas_Triticale%20Cumei%CC%80-UNRC.pdf", target:"_blank", class:"btn-ficha" do %>
+                        <p class="m-0 mx-1"><%= t'ficha' %></p>
+                        <p class="m-0 mx-1"><%= image_tag("https://storage.googleapis.com/zinmaimages/Vector-1_w6xmqf.svg") %></p>
+                      <% end %>
+                    </div>
+                  </div>
+                  <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="TRITICALEYAVU">
+                    <h1 class="font-pro" style="font-size: 35px;">Triticale Yavú-UNRC</h1>
+                    <p class="desc-pro2"><%= t'TRITICALEYAVU' %></p>
+                    <div class="m-5">
+                      <%= link_to "https://storage.googleapis.com/pasturas/Pasturas_Tricale%20Yayui%CC%80-UNRC.pdf", target:"_blank", class:"btn-ficha" do %>
+                        <p class="m-0 mx-1"><%= t'ficha' %></p>
+                        <p class="m-0 mx-1"><%= image_tag("https://storage.googleapis.com/zinmaimages/Vector-1_w6xmqf.svg") %></p>
+                      <% end %>
+                    </div>
+                  </div>
+                  <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="MADONNA">
+                    <h1 class="font-pro" style="font-size: 35px;">MADONNA</h1>
+                    <p class="desc-pro2"><%= t'MADONNA' %></p>
+                    <div class="m-5">
+                      <%= link_to "https://storage.googleapis.com/pasturas/Pasturas_Madonna_c%20(1).pdf", target:"_blank", class:"btn-ficha" do %>
+                        <p class="m-0 mx-1"><%= t'ficha' %></p>
+                        <p class="m-0 mx-1"><%= image_tag("https://storage.googleapis.com/zinmaimages/Vector-1_w6xmqf.svg") %></p>
+                      <% end %>
+                    </div>
+                  </div>
+                  <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="FLYINGA">
+                    <h1 class="font-pro" style="font-size: 35px;">FLYING A </h1>
+                    <p class="desc-pro2"><%= t'FLYINGA' %></p>
+                    <div class="m-5">
+                      <%= link_to "https://storage.googleapis.com/pasturas/Pasturas_Raigrae%CC%87s%20Flyinfg%20A.pdf", target:"_blank", class:"btn-ficha" do %>
+                        <p class="m-0 mx-1"><%= t'ficha' %></p>
+                        <p class="m-0 mx-1"><%= image_tag("https://storage.googleapis.com/zinmaimages/Vector-1_w6xmqf.svg") %></p>
+                      <% end %>
+                    </div>
+                  </div>
+                  <div class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="PUCARÁ">
+                    <h1 class="font-pro" style="font-size: 35px;">Festulolium PUCARÁ</h1>
+                    <p class="desc-pro2"><%= t'PUCARÁ' %></p>
+                    <div class="m-5">
+                      <%= link_to "https://storage.googleapis.com/pasturas/Pasturas_Festulolium%20PUCARA%CC%81.pdf", target:"_blank", class:"btn-ficha" do %>
+                        <p class="m-0 mx-1"><%= t'ficha' %></p>
+                        <p class="m-0 mx-1"><%= image_tag("https://storage.googleapis.com/zinmaimages/Vector-1_w6xmqf.svg") %></p>
+                      <% end %>
+                    </div>
+                  </div>
+
+                </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="intro mt-5" style="height: 696px;">
+      <div class="container">
+        <div class="d-flex justify-content-center flex-column align-items-center p-5 products-zinmas" >
+          <%= image_tag("https://storage.googleapis.com/zinmaimages/sorgo_1_qpsrr0.png", class:"position-absolute opacity-50") %>
+          <h1 class="font-pro m-4"><%= t'pasturas' %></h1>
+          <p class="desc-pro m-4"><%= t'description-pasturas' %></p>
+        </div>
+          <div class="d-flex justify-content-center" style="position: relative;">
+            <p class="pro-primer"><%= t'primera-calida' %></p>
+            <%= image_tag("https://storage.googleapis.com/zinmaimages/Arrow_16_futvng.svg", class:"flechas-pro", style:"rotate: 8deg;") %>
+            <%= image_tag("https://storage.googleapis.com/zinmaimages/Pasturas_web.png",  class:"bolsa") %>
+            <%= image_tag("https://storage.googleapis.com/zinmaimages/Arrow_17_udmr0w.svg", class:"flechas-pro", style:"rotate: 353deg;") %>
+            <p class="pro-rend"><%= t'rendimiento-com' %></p>
+          </div>
+      </div>
+  </div>
+</div>

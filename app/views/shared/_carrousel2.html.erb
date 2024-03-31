@@ -1,50 +1,52 @@
-<div class="swiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <div class="carousel-item ban active">
-        <div class="container img-carrousel" >
-          <p class="ban-1 slide-down"><%= t('ban-1') %></p>
-          <hr class="line">
-          <h1 class="ban-2 slide-up"><%= t('ban-2') %></h1>
-          <p class="ban-3 slide-up"><%= t('ban-3') %></p>
-          <div class="mt-5 slide-up">
-            <%= link_to t('ban-boton'), products_alfalfa_path, class:"boton-w" %>
+<% cache "unique_name_for_this_fragment_#{I18n.locale}" do %>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="carousel-item ban active" rel="preload">
+          <div class="container img-carrousel" >
+            <p class="ban-1 slide-down"><%= t('ban-1') %></p>
+            <hr class="line">
+            <h1 class="ban-2 slide-up"><%= t('ban-2') %></h1>
+            <p class="ban-3 slide-up"><%= t('ban-3') %></p>
+            <div class="mt-5 slide-up">
+              <%= link_to t('ban-boton'), products_index_path, remote: true, class:"boton-w" %>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="carousel-item ban2 active">
-        <div class="container img-carrousel" >
-            <p class="ban-1 slide-down"><%= t('ban-1b') %></p>
-            <hr class="line">
-            <h1 class="ban-2 slide-up"><%= t('ban-2b') %></h1>
-            <p class="ban-3 slide-up"><%= t('ban-3b') %></p>
-            <div class="mt-5 slide-up">
-              <%= link_to t('ban-boton'), products_alfalfa_path, class:"boton-w" %>
-            </div>
+      <div class="swiper-slide">
+        <div class="carousel-item ban2 active" rel="preload">
+          <div class="container img-carrousel" >
+              <p class="ban-1 slide-down"><%= t('ban-1b') %></p>
+              <hr class="line">
+              <h1 class="ban-2 slide-up"><%= t('ban-2b') %></h1>
+              <p class="ban-3 slide-up"><%= t('ban-3b') %></p>
+              <div class="mt-5 slide-up">
+                <%= link_to t('ban-boton'), products_index_path, remote: true, class:"boton-w" %>
+              </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="carousel-item ban3 active">
-        <div class="container img-carrousel" >
-            <p class="ban-1 slide-down"><%= t('ban-1c') %></p>
-            <hr class="line">
-            <h1 class="ban-2 slide-up"><%= t('ban-2c') %></h1>
-            <p class="ban-3 slide-up"><%= t('ban-3c') %></p>
-            <div class="mt-5 slide-up">
-              <%= link_to t('ban-boton'), products_alfalfa_path, class:"boton-w" %>
-            </div>
+      <div class="swiper-slide">
+        <div class="carousel-item ban3 active" rel="preload">
+          <div class="container img-carrousel" >
+              <p class="ban-1 slide-down"><%= t('ban-1c') %></p>
+              <hr class="line">
+              <h1 class="ban-2 slide-up"><%= t('ban-2c') %></h1>
+              <p class="ban-3 slide-up"><%= t('ban-3c') %></p>
+              <div class="mt-5 slide-up">
+                <%= link_to t('ban-boton'), products_index_path, remote: true, class:"boton-w" %>
+              </div>
+          </div>
         </div>
       </div>
+
     </div>
+
+    <div class="pagination d-flex justify-content-center align-items-center" style="position: absolute;z-index: 100;bottom: 55px;"></div>
 
   </div>
-
-  <div class="pagination d-flex justify-content-center align-items-center" style="position: absolute;z-index: 100;bottom: 55px;"></div>
-
-</div>
+<% end %>
 
 
 <!-- Styles -->

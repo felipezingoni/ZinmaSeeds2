@@ -10,22 +10,21 @@ export default class extends Controller {
 
   show(e) {
     e.preventDefault();
-    let currentIndex = parseInt(this.data.get('index'));
-    this.desactivate(currentIndex);
-
-
+    // Desactivar todos los contenidos primero
+    this.contentTargets.forEach((content, index) => {
+      this.desactivate(index);
+    });
+    // Activar el contenido correspondiente al item seleccionado
     this.itemTargets.forEach((item, index) => {
       if (item === e.target) {
         this.activate(index);
       }
     });
   }
-
   desactivate(index) {
     this.itemTargets[index].classList.remove('active2');
     this.contentTargets[index].classList.remove('show', 'active');
   }
-
   activate(index) {
     this.itemTargets[index].classList.add('active2');
     this.contentTargets[index].classList.add('show', 'active');

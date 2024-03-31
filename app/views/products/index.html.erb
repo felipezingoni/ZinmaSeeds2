@@ -1,0 +1,30 @@
+<div>
+  <div class="product-banner">
+    <h1><%= t 'product-title' %></h1>
+  </div>
+  <div data-controller="product">
+    <div class="container container-sm m-sm-5">
+      <div class="d-flex">
+        <ul class="d-flex list-inline">
+          <li data-action="click->product#show" data-product-name="alfalfa"><h2 class="font"><div class="font2"><%= t('Alfalfa') %></div></h2></li>
+          <li data-action="click->product#show" data-product-name="sorgo"><h2 class="font"><div class="font2"><%= t('Sorgo') %></div></h2></li>
+          <li data-action="click->product#show" data-product-name="pasturas"><h2 class="font"><div class="font2"><%= t('Pasturas') %></div></h2></li>
+          <li data-action="click->product#show" data-product-name="cultivos"><h2 class="font"><div class="font2"><%= t('Cultivos') %></div></h2></li>
+        </ul>
+      </div>
+    </div>
+    <div data-product-target="content" data-product-name="alfalfa" class="product-content" >
+      <%= render 'products/content/alfalfa' %>
+    </div>
+    <div data-product-target="content" data-product-name="cultivos" class="product-content" style="display: none;">
+      <%= render 'products/content/cultivos' %>
+    </div>
+    <div data-product-target="content" data-product-name="pasturas" class="product-content" style="display: none;">
+      <%= render 'products/content/pasturas' %>
+    </div>
+    <div data-product-target="content" data-product-name="sorgo" class="product-content" style="display: none;">
+      <%= render 'products/content/sorgo'%>
+    </div>
+  </div>
+  <%= render 'shared/ensayo' %>
+</div>
