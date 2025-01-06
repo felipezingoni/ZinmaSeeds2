@@ -1,13 +1,13 @@
 <div class="footer">
   <div class="container">
     <div class="d-flex justify-content-center pt-5">
-      <%= image_tag "https://storage.googleapis.com/zinmaimages/Zinma_blanco_1_tv0iru%20(1).svg" %>
+      <%= image_tag "https://storage.googleapis.com/zinmaimages/Zinma_blanco_1_tv0iru%20(1).svg", alt:"Zinma seed logo white" %>
     </div>
     <div class="d-flex justify-content-center align-items-center align-content-center">
         <%= link_to "Home", root_path, class:"footerhover text-white text-decoration-none" %>
-        <%= link_to t('productos'), products_index_path, class:"footerhover text-white text-decoration-none",  data: { remote: true } %>
-        <%= link_to t('nosotros'), pages_aboutus_path, class:"footerhover text-white text-decoration-none" %>
-        <%= link_to t('contacto'), pages_contact_path, class:"footerhover text-white text-decoration-none" %>
+        <%= link_to t('productos'), products_path, class:"footerhover text-white text-decoration-none",  data: { remote: true } %>
+        <%= link_to t('nosotros'), about_us_path, class:"footerhover text-white text-decoration-none" %>
+        <%= link_to t('contacto'), contact_path, class:"footerhover text-white text-decoration-none" %>
     </div>
     <div class="d-flex justify-content-center align-items-center align-content-center m-4">
       <div class="icon-circule">

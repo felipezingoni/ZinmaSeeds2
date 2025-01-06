@@ -1,4 +1,5 @@
 module.exports = function(api) {
+  console.log("Babel config is being used.");
   var validEnv = ['development', 'test', 'production']
   var currentEnv = api.env()
   var isDevelopmentEnv = api.env('development')

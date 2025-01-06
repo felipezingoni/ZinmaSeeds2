@@ -4,12 +4,12 @@
     <div class="container">
         <div class="row">
         <div class="col-12 col-md-12">
-            <h1 class="title-zinma">ZINMA SEEDS</h1>
+            <h2 class="title-zinma">ZINMA SEEDS</h2>
             <div class="col-sm-12 col-lg-5 " data-aos="fade-up">
               <p class="description-zinma" ><%= t 'description' %></p>
             </div>
             <div class="boton-div">
-              <%= link_to t('boton'), pages_contact_path, class:"boton" %>
+              <%= link_to t('boton'), contact_path, class:"boton" %>
             </div>
           </div>
       </div>
@@ -19,7 +19,7 @@
   <div data-controller="loader">
     <div class="loaders" >
       <div class="loader-tadpole ">
-        <img src="https://storage.googleapis.com/zinmaimages/Zinma_full_color_ymgqie_1_1_xgboiv.webp" alt="Italian Trulli" style="width:100px;margin:0px;">
+        <img src="https://storage.googleapis.com/zinmaimages/Zinma_full_color_ymgqie_1_1_xgboiv.webp" alt="Zinma Seeds Logo" style="width:100px;margin:0px;">
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@
 <div class="intro3">
   <div class="d-flex align-items-center justify-content-between" style="padding-top: 7%;">
     <div class="mx-5 toc">
-      <h1 class="donde-title"><%= t 'donde-estamos' %></h1>
+      <h2 class="donde-title"><%= t 'donde-estamos' %></h2>
       <p class="donde-desc"><%= t 'desc-donde' %></p>
       <div class="mt-5">
         <%= link_to t('boton2-home'), "#", class:"boton btn-boton" %>
@@ -40,7 +40,7 @@
         <p class="pro-primer m-4" data-aos="fade-up"
         data-aos-duration="3000"><%= t('donde-frase') %></p>
     </div>
-    <%= image_tag("https://storage.googleapis.com/zinmaimages/DJI_0863_1_qymoix_iyvndr.webp", class:"plantas", loading:"lazy") %>
+    <%= image_tag("https://storage.googleapis.com/zinmaimages/DJI_0863_1_qymoix_iyvndr.webp", alt:"Ensayo", class:"plantas", loading:"lazy") %>
   </div>
 </div>
 <div class="intro-mapa">

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Zinma Seeds | Productor de semillas forrajeras.</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta charset="utf-8">
     <link rel="icon" type="image/png" href="https://storage.googleapis.com/zinmaimages/Zinma_full_color_ymgqie%20(3).png" />
-    <meta name="description" content=" Somos una empresa enfocada en el bredding, producción y marketing de semillas forrajeras. Especializándonos en especies como alfalfas, sorgos, cultivos de servicios y gramíneas perennes incluyendo rye grasses y
-      festucas.">
+
+    <title><%= @title || 'Zinma Seeds | Productor de semillas forrajeras.' %></title>
+    <meta name="description" content="<%= @meta_description || 'Somos una empresa enfocada en el bredding, producción y marketing de semillas forrajeras. Especializándonos en especies como alfalfas, sorgos, cultivos de servicios y gramíneas perennes incluyendo rye grasses y festucas.' %>">
+    <link rel="canonical" href="<%= @canonical_url || request.original_url %>" />
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'%>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -17,6 +18,7 @@
     <script src="https://kit.fontawesome.com/2de2fa6cb0.js" crossorigin="anonymous"></script>
     <link rel="preload" href="https://storage.googleapis.com/zinmaimages/ZINMA_horizontal_1_-_FINAL_1_jspw6b.mp4" as="video" type="video/mp4" />
 
+    <link rel="canonical" href="https://www.zinmaseeds.com/es"/>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

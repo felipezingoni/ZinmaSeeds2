@@ -2,7 +2,7 @@
   <div class="container d-flex justify-content-between align-items-center flex-md-space-between ">
       <div>
       <%= link_to root_path do%>
-        <%= image_tag("https://storage.googleapis.com/zinmaimages/Zinma_full_color_ymgqie_1_1_xgboiv.webp", style:"width:80px;height:80px") %>
+        <%= image_tag("https://storage.googleapis.com/zinmaimages/Zinma_full_color_ymgqie_1_1_xgboiv.webp", alt:"Zinma Seeds Logo", style:"width:80px;height:80px") %>
       <% end %>
       </div>
       <div class="d-flex justify-content-between align-items-center down-navbar">
@@ -12,13 +12,13 @@
                   <%= link_to "Home", root_path, class:"nav-letter nav2-link" %>
                 </li>
                 <li class="nav-item px-4">
-                  <%= link_to t('productos'), products_index_path, class: "nav-letter nav2-link" %>
+                  <%= link_to t('productos'), products_path, class: "nav-letter nav2-link" %>
                 </li>
                 <li class="nav-item px-4">
-                  <%= link_to t('nosotros'), pages_aboutus_path, class:"nav-letter nav2-link" %>
+                  <%= link_to t('nosotros'), about_us_path, class:"nav-letter nav2-link" %>
                 </li>
                 <li class="nav-item px-4">
-                  <%= link_to t('contacto'), pages_contact_path, class:"nav-letter nav2-link" %>
+                  <%= link_to t('contacto'), contact_path, class:"nav-letter nav2-link" %>
                 </li>
                 <li class="d-flex d-lg-none px-4">
                   <%= link_to root_path(locale: :es), class:"nav-letter" do %>
@@ -35,23 +35,23 @@
       <div class="selector" data-controller="language">
           <div class="selectField" data-action="click->language#toggle">
               <% if I18n.locale == :en %>
-                  <span ><%= image_tag("https://storage.googleapis.com/zinmaimages/emojione_flag-for-united-states_magqgf.svg") %></span>
+                  <span ><%= image_tag("https://storage.googleapis.com/zinmaimages/emojione_flag-for-united-states_magqgf.svg", alt:"USA Flag") %></span>
                  <% elsif  I18n.locale == :es %>
-                  <span ><%= image_tag("https://storage.googleapis.com/zinmaimages/emojione_flag-for-argentina_zapp7v.svg") %></span>
+                  <span ><%= image_tag("https://storage.googleapis.com/zinmaimages/emojione_flag-for-argentina_zapp7v.svg", alt:"Argentina Flag") %></span>
                 <% else %>
-                  <span ><%= image_tag("https://storage.googleapis.com/zinmaimages/emojione_flag-for-argentina_zapp7v.svg") %></span>
+                  <span ><%= image_tag("https://storage.googleapis.com/zinmaimages/emojione_flag-for-argentina_zapp7v.svg", alt:"USA Flag") %></span>
               <% end %>
-              <div id="selectText" ><%= image_tag("https://storage.googleapis.com/zinmaimages/chevron_iv5t58.png") %></div>
+              <div id="selectText" ><%= image_tag("https://storage.googleapis.com/zinmaimages/chevron_iv5t58.png", alt:"arrow") %></div>
           </div>
           <ul class="list hide" data-language-target="element">
             <li class="options show active" >
               <%= link_to root_path(locale: :es) do %>
-                <%= image_tag("https://storage.googleapis.com/zinmaimages/emojione_flag-for-argentina_zapp7v.svg") %>
+                <%= image_tag("https://storage.googleapis.com/zinmaimages/emojione_flag-for-argentina_zapp7v.svg", alt:"USA Flag") %>
               <% end %>
             </li>
             <li class="options" >
               <%= link_to root_path(locale: :en) do %>
-                <%= image_tag("https://storage.googleapis.com/zinmaimages/emojione_flag-for-united-states_magqgf.svg") %>
+                <%= image_tag("https://storage.googleapis.com/zinmaimages/emojione_flag-for-united-states_magqgf.svg", alt:"USA Flag") %>
               <% end %>
             </li>
           </ul>

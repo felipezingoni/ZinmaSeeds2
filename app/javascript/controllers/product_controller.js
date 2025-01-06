@@ -3,10 +3,22 @@ import { Controller } from "@hotwired/stimulus";
 export default class extends Controller {
   static targets = ["content"];
 
+  connect() {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      this.showContent(hash);
+    }
+  }
+
   show(event) {
     event.preventDefault();
     const productName = event.currentTarget.dataset.productName;
+    this.showContent(productName);
+    this.updateURL(productName);
+    this.highlightProductName(productName);
+  }
 
+  showContent(productName) {
     // Ocultar todos los contenidos
     this.contentTargets.forEach((content) => {
       content.style.display = 'none';
@@ -27,5 +39,11 @@ export default class extends Controller {
         container.insertBefore(contentToShow, firstContentTarget);
       }
     }
+  }
+
+  updateURL(productName) {
+    const url = new URL(window.location);
+    url.hash = productName;
+    history.pushState({}, '', url);
   }
 }
